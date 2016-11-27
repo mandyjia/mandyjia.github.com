@@ -4,6 +4,12 @@ function rnd(n,m){
 function d2a(n){
 	return Math.PI/180*n;
 }
+//弧度转角度
+function a2d(n){
+	return 180/Math.PI*n;
+}
+
+
 window.addEventListener('DOMContentLoaded',function(){
 	//移入导航中的li 使其变色
 	var aLi = document.querySelectorAll('.nav-ul li');
@@ -20,60 +26,6 @@ window.addEventListener('DOMContentLoaded',function(){
 			},false)
 		})(i);
 	}
-	//吸顶条
-	var oDraw = document.querySelector('.draw');
-	var oHead = document.querySelector('header');
-	window.onscroll = function(){
-		var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-		if(scrollTop>= '100'){
-			oHead.style.position='fixed';
-			oHead.style.top='0';
-			oHead.style.left='0';
-			oHead.style.zIndex = '2';
-			oDraw.style.display='block';
-		}else{
-			oHead.style.position='static';
-			oDraw.style.display='none';
-		}
-	};		
-	//点击我的作品
-	var oApage = document.querySelector('#a-mypage');   //我的首页
-	var oAworks = document.querySelector('#a-mywork');  //我的作品
-	var oWel = document.querySelector('.wel');
-	var timer = null;
-    var bOk = false;
-    window.addEventListener('scroll',function(){
-		if(bOk){
-            clearInterval(timer);
-        }
-        bOk=true;
-    },false);
-    
-    oApage.onclick = function(){
-    	//当点击‘我的首页’的a标签时  吊牌中的文字改成'欢迎光临'
-    	oWel.innerHTML = '欢迎光临';
-    };
-    
-	oAworks.onclick = function(){
-		//当点击‘我的作品’的a标签时  吊牌中的文字改成'我的作品'
-		oWel.innerHTML = '我的作品';
-		clearInterval(timer);		
-        var oScrollTop = document.documentElement.scrollTop||document.body.scrollTop;
-        var count =Math.floor(2000/30);
-        var dis = 670-oScrollTop;
-        var start = oScrollTop;
-        var n = 0;
-        timer=setInterval(function(){
-            n++;
-            bOk=false;
-            var a = 1-n/count;
-            var cur = start+dis*(1-a*a*a);
-            document.documentElement.scrollTop=document.body.scrollTop=cur;
-            if(n==count){
-                clearInterval(timer);
-            }
-        },30) 
-	};
 	//banner图
 		var oBox=document.querySelector('#box');
 		var R=4;
@@ -126,7 +78,7 @@ window.addEventListener('DOMContentLoaded',function(){
 		var oI=document.querySelector('#butterfly');
 		var oP=document.querySelector('#butterfly p');
 			var r=45;
-			function move(obj,end){
+			function moveFly(obj,end){
 				var dis=end-0;
 				var count=Math.floor(3000/30);
 				var n=0;
@@ -141,7 +93,6 @@ window.addEventListener('DOMContentLoaded',function(){
 					obj.style.transform='translate('+x+'px,'+y+'px)';		
 				},30);
 			}
-			move(oP,360);
-	//我的作品展示
-	
+			moveFly(oP,360);
 },false)
+

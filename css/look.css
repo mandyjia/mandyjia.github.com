@@ -1,0 +1,16 @@
+.pic{height: 360px}
+.wrap{width: 800px;height: 360px;margin:200px auto;perspective: 800px;cursor: pointer}
+.pic li{list-style-type: none;height:360px;width: 200px;float: left;position: relative;transform-style: preserve-3d;transform:translateZ(-180px)}
+/*设置li的四个面的属性，构成一个立方体（没有左右两个面）。 每一个li都拥有4个div面。所以设置背景图片相同。在通过JS动态添加position背景图片显示的位置*/
+.pic li div{height:360px;position: absolute;}
+/*transform-origin：设置旋转元素的基点位置   */
+.pic li div:nth-child(1){top:-360px;transform-origin:bottom;transform:translateZ(180px) rotateX(90deg); background: url('../img5/1.jpg');}
+.pic li div:nth-child(2){top:360px;transform-origin:top;transform:translateZ(180px) rotateX(-90deg);background: url('../img5/2.jpg');}
+.pic li div:nth-child(3){transform:translateZ(180px);background: url('../img5/3.jpg');}
+.pic li div:nth-child(4){transform:translateZ(-180px) rotateX(180deg);background: url('../img5/4.jpg');}
+/*4个选项按钮*/
+.but li{list-style-type: none;width: 20px;height: 20px;background-color: #000;border-radius: 10px;color:#fff;font-size: 12px;text-align: center;line-height: 20px;float: left;margin-left: 5px;cursor: pointer;box-shadow: -1px 3px 6px white}
+.but{position: absolute;bottom:10px;right: 10px}
+.but .active,.but li:hover{
+	background-color: red;
+}

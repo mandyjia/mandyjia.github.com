@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/mywork2.css" />
+		<link rel="stylesheet" href="css/head.css"/>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/style.css"/>
+		<script src="js/myWorks.js"></script>
+		<script src="js/pcList.js"></script>
+		<script src="js/lagou.js"></script>
+		<script src="js/move.js"></script>
+	</head>
+	<body>
+		<div class="myworksIndex">
+			<div class="bg bg1">
+				<!--头部-->
+				<div class="draw"></div>
+				<header class="clearfix header">
+					<div class="bg-left fl">
+						<em class="shan"></em>
+						<span class="s-one"></span>
+						<i>
+							<span class="wel">我的作品</span>
+						</i>
+					</div>
+					<div class="back fl">返回
+						<nav class="fl work-ul">
+							<ul class="clearfix nav-ul">
+								<li class="fl">
+									<a href="http://127.0.0.1:8020/myWeb/index.html">我的首页</a>
+								</li>
+								<li class="fl">
+									<a href="http://127.0.0.1:8020/myWeb/myWorks2.html">我的作品</a>
+								</li>
+								<li class="fl">
+									<a href="http://127.0.0.1:8020/myWeb/myHonor.html">我的荣誉</a>
+								</li>
+								<li class="fl">
+									<a href="http://127.0.0.1:8020/myWeb/aboutMe.html">关于我</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</header>
+			</div>
+			<!--主体-->
+			<div class="mainBox clearfix">
+				<div class="content">
+					<div class="total">
+						<ul class="title1 clearfix">
+							<li class="fl">PC</li>
+							<li class="fl">端</li>
+							<li class="fl">整</li>
+							<li class="fl">站</li>
+							<li class="fl">项</li>
+							<li class="fl">目</li>
+						</ul>
+						<!--作品pc列表-->
+						<div id="pcList">
+					        <ul>
+					            <li><img src="img3/1.jpg" alt=""/></li>
+					            <li><img src="img3/2.jpg" alt=""/></li>
+					            <li><img src="img3/3.jpg" alt=""/></li>
+					            <li><img src="img3/4.jpg" alt=""/></li>
+					            <li><img src="img3/5.jpg" alt=""/></li>
+					            <li><img src="img3/6.jpg" alt=""/></li>
+					            <li><img src="img3/7.jpg" alt=""/></li>
+					            <li><img src="img3/8.jpg" alt=""/></li>
+					            <li><img src="img3/9.jpg" alt=""/></li>
+					        </ul>
+					    </div>
+					    <ul class="title2 clearfix">
+							<li class="fl">移</li>
+							<li class="fl">动</li>
+							<li class="fl">端</li>
+							<li class="fl">项</li>
+							<li class="fl">目</li>
+						</ul>
+						<div id="mobList">
+							<div class="bodyCon07">
+							<div class="teacher">
+									<div class="teacherPic">
+										<div class="content" id="sirendingzhi1">
+							<!--				<img src="images/teacher011.jpg" width="200" height="325" />-->
+											<div class="txt">
+												<h3>移动端布局</h3>
+												<h4>特点：屏幕大小  自适应  比设计图小</h4>
+												<p>百分比布局<br>
+												   固定宽度布局<br>
+												 rem布局<br>
+												 媒体查询 响应式布局<br>
+												   表格布局</p>
+												  
+											</div>
+										</div>
+										<div class="content" id="sirendingzhi2">
+											
+											<div class="txt">
+												<h3>HTML5</h3>
+												<h4>特点：兼容chrome firefox</h4>
+												<p>语义化更强，标签都有各自的含义，有利于seo优化</p>
+											</div>
+										</div>
+										<div class="content" id="sirendingzhi3">
+							
+											<div class="txt">
+												<a href="#" ><h3>CSS3</h3></a>
+												<h4>特点：兼容chrome firefox</h4>
+												<p>有更加多样、强大的选择器，样式更加绚烂</p>
+											</div>
+										</div>
+										<div class="content" id="sirendingzhi4">
+								
+											<div class="txt">
+												<h3>移动端插件</h3>
+												<h4>特点：使用方便</h4>
+												<p>jQueryMobile.js<br>
+												  zepto.js<br>
+												   swiper.js</p>
+											</div>
+										</div>
+										<div class="content" id="sirendingzhi5">
+							
+											<div class="txt">
+												<h3>PC端与移动端</h3>
+												<h4>操作方式，屏幕尺寸...</h4>
+												<p>PC端使用鼠标操作，而移动端用手指；PC端屏幕大，而移动端设备相对来说屏幕较小，操作局限性大</p>
+											</div>
+										</div>
+									</div>
+									
+									<div style="clear:both;"></div>
+									
+								</div>
+							</div>
+							
+							<div class="bot-list">
+								<ul class="clearfix">
+									<li class="fl bot-li">
+										<p></p>
+									</li>
+									<li class="fl bot-li">
+										<p></p>
+									</li>
+									<li class="fl bot-li">
+										<p></p>
+									</li>
+									<li class="fl bot-li">
+										<p></p>
+									</li>
+									<li class="fl bot-li"> 
+										<p></p>
+									</li>
+								</ul>
+							</div>
+							 <!--java开始-->
+							<script type="text/javascript" src="js/jquery.js"></script>
+							<script type="text/javascript">
+								$(".content") .hover(function(){
+										$(this) .children(".txt").stop() .animate({height:"360px"},200);
+							            $(this) .parent(".teacherPic") .css({"background":"url(images/"+($(this).attr('id'))+".jpg) no-repeat","-webkit-transition":"all 0.8s ease 0.2s","transition":"all 0.8s ease 0.2s"});
+							/*			$(this) .parent(".teacherPic") .css("background","url(images/"+($(this).attr('id'))+".jpg) no-repeat");*/
+										$(this) .find(".txt h3").stop() .animate({paddingTop:"130"},550);
+										$(this) .find(".txt p").stop() .show();
+								},function(){
+										$(this) .children(".txt").stop() .animate({height:"100px"},200);
+										$(this) .find(".txt h3").stop().animate({paddingTop:"0px"},550);
+										$(this) .find(".txt p").stop() .hide();
+									})
+							</script>
+							<!--java结束-->
+						</div>
+						<!--
+                       <ul class="title3">
+							<li class="fl">我</li>
+							<li class="fl">学</li>
+							<li class="fl">到</li>
+							<li class="fl">的</li>
+						</ul>
+						<div id="styleList">
+							<p style="text-align:center;">
+						    	<input type="button" value="上一个" />
+						        <input type="button" value="下一个" />
+						    </p>
+							<ul class="study-list">
+						    	<li>1</li>
+						        <li class="pre2">2</li>
+						        <li class="pre">3</li>
+						        <li class="now">4</li>
+						        <li class="next">5</li>
+						        <li class="next2">6</li>
+						    </ul>	
+						</div> -->
+					</div>
+				</div>
+				<div class="bott-fix">
+					<div class="fix-tab"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

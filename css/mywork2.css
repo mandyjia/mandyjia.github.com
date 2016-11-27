@@ -1,0 +1,260 @@
+/*我的作品*/
+.myworksIndex .bg1 {
+  overflow: hidden;
+}
+.myworksIndex .bg1 .bg-left {
+  z-index: 1;
+}
+.myworksIndex .bg1 .header {
+  height: 173px;
+}
+.myworksIndex .bg1 .header .wel {
+  z-index: 1;
+}
+.myworksIndex .bg1 .back {
+  width: 50px;
+  height: 50px;
+  background: #B8860B;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #7FFF00;
+  margin-left: 856px;
+  text-align: center;
+  line-height: 50px;
+  position: relative;
+}
+.myworksIndex .bg1 .back .work-ul {
+  width: 760px;
+  position: absolute;
+  left: 92px;
+  top: 42px;
+  transform-style: preserve-3d;
+}
+.myworksIndex .bg1 .back .work-ul ul {
+  background: url(../img/5.png) no-repeat left center;
+  background-size: 810px 55px ;
+  height: 55px;
+  margin-top: 30px;
+  position: relative;
+  z-index: 1;
+}
+.myworksIndex .bg1 .back .work-ul ul li {
+  margin-top: 14px;
+  margin-left: 72px;
+  background: url(../img/6.png) no-repeat;
+  font-size: 16px;
+  font-family: "微软雅黑";
+  width: 115px;
+  height: 29px;
+  text-align: center;
+  height: 32px;
+  line-height: 26px;
+}
+.myworksIndex .bg1 .back .work-ul ul li a {
+  color: #eee9c3;
+}
+.myworksIndex .mainBox {
+  width: 100%;
+  height: 1242px;
+  /*1714*/
+  background: url(../img/bg.png);
+  position: relative;
+}
+.myworksIndex .mainBox .content {
+  width: 1347px;
+  height: 800px;
+}
+.myworksIndex .mainBox .content .total {
+  width: 100%;
+}
+.myworksIndex .mainBox .content .total .title1 {
+  width: 360px;
+  height: 50px;
+  font-size: 20px;
+  color: #11E82B;
+  font-family: "微软雅黑";
+  margin: 0 auto;
+}
+.myworksIndex .mainBox .content .total .title1 li {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: darkgoldenrod;
+  text-align: center;
+  line-height: 50px;
+  margin-left: 10px;
+}
+.myworksIndex .mainBox .content .total #pcList {
+  width: 1002px;
+  height: 438px;
+  margin: 0px auto;
+  position: relative;
+  overflow: hidden;
+}
+.myworksIndex .mainBox .content .total #pcList ul {
+  position: absolute;
+  height: 226px;
+  top: 50%;
+  left: 0;
+  margin-top: -90px;
+}
+.myworksIndex .mainBox .content .total #pcList ul li {
+  list-style: none;
+  float: left;
+  width: 260px;
+  height: 179px;
+  padding: 0 20px;
+  position: relative;
+  cursor: pointer;
+}
+.myworksIndex .mainBox .content .total #pcList ul li img {
+  width: 260px;
+  height: 224px;
+}
+.myworksIndex .mainBox .content .total .title2 {
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+  color: #11E82B;
+  font-family: "微软雅黑";
+  margin: 0 auto;
+}
+.myworksIndex .mainBox .content .total .title2 li {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: darkgoldenrod;
+  text-align: center;
+  line-height: 50px;
+  margin-left: 10px;
+}
+.myworksIndex .mainBox .content .total #mobList {
+  width: 1010px;
+  height: 530px;
+  margin: 35px auto;
+}
+.myworksIndex .mainBox .content .total #mobList .bot-list {
+  width: 100%;
+  height: 172px;
+  margin: 0 auto;
+}
+.myworksIndex .mainBox .content .total #mobList .bot-list ul {
+  margin-left: 3px;
+  margin-top: 30px;
+}
+.myworksIndex .mainBox .content .total #mobList .bot-list ul li {
+  width: 170px;
+  height: 170px;
+  background: red;
+  position: relative;
+  overflow: hidden;
+  margin-right: 38px;
+  cursor: pointer;
+}
+.myworksIndex .mainBox .content .total #mobList .bot-list ul li p {
+  background: salmon;
+  opacity: .4;
+  position: absolute;
+  left: 200px;
+  top: 0;
+  width: 170px;
+  height: 170px;
+  color: red;
+  font-size: 50px;
+}
+.myworksIndex .mainBox .content .total #mobList .bot-list ul li:nth-child(1) {
+  background: url(../img/16.jpg) no-repeat;
+  background-size: 100%;
+}
+.myworksIndex .mainBox .content .total #mobList .bot-list ul li:nth-child(2) {
+  background: url(../img/17.jpg) no-repeat;
+  background-size: 100%;
+}
+.myworksIndex .mainBox .content .total #mobList .bot-list ul li:nth-child(3) {
+  background: url(../img/1.gif) no-repeat;
+}
+.myworksIndex .mainBox .content .total #mobList .bot-list ul li:nth-child(4) {
+  background: url(../img/18.jpg) no-repeat;
+  background-size: 100%;
+}
+.myworksIndex .mainBox .content .total #mobList .bot-list ul li:nth-child(5) {
+  margin-right: -38px;
+  background: url(../img/1.gif) no-repeat;
+}
+.myworksIndex .mainBox .content .total .title3 {
+  width: 250px;
+  height: 50px;
+  font-size: 20px;
+  color: #11E82B;
+  font-family: "微软雅黑";
+  margin: 0 auto;
+}
+.myworksIndex .mainBox .content .total .title3 li {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: darkgoldenrod;
+  text-align: center;
+  line-height: 50px;
+  margin-left: 10px;
+}
+.myworksIndex .mainBox .content .total #styleList {
+  width: 1010px;
+  height: 350px;
+  border: 1px solid red;
+  margin: 35px auto;
+}
+.myworksIndex .mainBox .content .total #styleList .study-list {
+  width: 200px;
+  height: 300px;
+  margin: auto;
+  position: relative;
+  border: 1px  solid darkblue;
+}
+.myworksIndex .mainBox .content .total #styleList .study-list li {
+  width: 100%;
+  height: 100%;
+  background: yellow;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 1s;
+  /*opacity: 0;*/
+}
+.myworksIndex .mainBox .content .total #styleList .study-list .now {
+  z-index: 1;
+  opacity: 1;
+}
+.myworksIndex .mainBox .content .total #styleList .study-list .pre {
+  transform: perspective(800px) translateX(-200px) rotateY(50deg);
+  opacity: 0.8;
+}
+.myworksIndex .mainBox .content .total #styleList .study-list .next {
+  transform: perspective(800px) translateX(200px) rotateY(-50deg);
+  opacity: 0.8;
+}
+.myworksIndex .mainBox .content .total #styleList .study-list .pre2 {
+  transform: perspective(800px) translateX(-300px) rotateY(50deg);
+  opacity: 0;
+}
+.myworksIndex .mainBox .content .total #styleList .study-list .next2 {
+  transform: perspective(800px) translateX(300px) rotateY(-50deg);
+  opacity: 0;
+}
+.myworksIndex .mainBox .bott-fix {
+  width: 274px;
+  height: 326px;
+  background: url(../img/13.png);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: none;
+}
+.myworksIndex .mainBox .bott-fix .fix-tab {
+  width: 142px;
+  height: 135px;
+  border: 1px solid darkblue;
+  position: absolute;
+  left: 15px;
+  top: 64px;
+}

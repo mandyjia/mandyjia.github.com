@@ -1,0 +1,141 @@
+.aboutMe .bg1 {
+  overflow: hidden;
+}
+.aboutMe .bg1 .bg-left {
+  z-index: 1;
+}
+.aboutMe .bg1 .header {
+  height: 173px;
+}
+.aboutMe .bg1 .header .wel {
+  z-index: 1;
+}
+.aboutMe .bg1 .back {
+  margin-left: 856px;
+  position: relative;
+}
+.aboutMe .bg1 .back .work-ul {
+  width: 760px;
+  position: absolute;
+  left: 92px;
+  top: 42px;
+}
+.aboutMe .bg1 .back .work-ul ul {
+  background: url(../img/5.png) no-repeat left center;
+  background-size: 810px 55px ;
+  height: 55px;
+  margin-top: 30px;
+  position: relative;
+  z-index: 1;
+}
+.aboutMe .bg1 .back .work-ul ul li {
+  margin-top: 14px;
+  margin-left: 72px;
+  background: url(../img/6.png) no-repeat;
+  font-size: 16px;
+  font-family: "微软雅黑";
+  width: 115px;
+  height: 29px;
+  text-align: center;
+  height: 32px;
+  line-height: 26px;
+}
+.aboutMe .bg1 .back .work-ul ul li a {
+  color: #eee9c3;
+}
+.aboutMe .myInfo {
+  width: 100%;
+  height: 470px;
+  position: absolute;
+  left: 0px;
+  top: 172px;
+  background: url(../img/14.png) no-repeat -30px -75px;
+}
+.aboutMe .myInfo ul {
+  margin-top: 200px;
+  text-align: center;
+  line-height: 30px;
+}
+.aboutMe .myInfo ul li {
+  width: 200px;
+  height: 40px;
+  font-size: 28px;
+  font-family: "微软雅黑";
+  margin-top: 50px;
+  background: url(../img/1.gif);
+}
+.aboutMe .myInfo ul li a {
+  color: deeppink;
+}
+.aboutMe .myInfo ul li:nth-child(2) {
+  margin-left: 200px;
+}
+.aboutMe .myInfo ul li:nth-child(3) {
+  margin-left: 400px;
+}
+.aboutMe .myInfo .imgBox1 {
+  position: absolute;
+  right: 0;
+  top: 250px;
+  cursor: pointer;
+}
+.aboutMe .myInfo .imgBox1 img {
+  width: 300px;
+  height: 200px;
+}
+.aboutMe .myInfo .imgBox2 {
+  position: absolute;
+  right: 280px;
+  top: 200px;
+  cursor: pointer;
+}
+.aboutMe .myInfo .imgBox2 img {
+  width: 300px;
+  height: 200px;
+}
+.aboutMe .myInfo .imgBox3 {
+  position: absolute;
+  right: 560px;
+  top: 160px;
+  cursor: pointer;
+}
+.aboutMe .myInfo .imgBox3 img {
+  width: 300px;
+  height: 200px;
+}
+.aboutMe .myInfo .layer {
+  width: 100%;
+  height: 800px;
+  background: sienna;
+  opacity: 0.3;
+  position: absolute;
+  left: 0;
+  top: -300px;
+  display: none;
+}
+.aboutMe .myInfo .div1 {
+  width: 900px;
+  height: 500px;
+  border: 1px solid skyblue;
+  margin: 0 auto;
+  background: url(../img/10.png) no-repeat left bottom #89d0cf;
+  position: absolute;
+  left: 300px;
+  top: -100px;
+  transform: scale(0);
+}
+.aboutMe .myInfo .div1 p {
+  font-size: 28px;
+  font-family: "微软雅黑";
+  margin-left: 300px;
+  margin-top: 20px;
+}
+.aboutMe .myInfo .div1 span {
+  width: 20px;
+  height: 20px;
+  background: salmon;
+  border-radius: 50% ;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
