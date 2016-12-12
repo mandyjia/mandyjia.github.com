@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/base.css"/>
+		<link rel="stylesheet" href="css/aboutMe.css" />
+		<link rel="stylesheet" href="css/head.css" />
+		<link rel="stylesheet" href="css/style3.css" />
+		<link rel="stylesheet" href="css/animate.css" />
+		<script src="js/myHonor.js"></script>
+		<script src="js/verlet-1.0.0.js"></script>
+		<script src="js/common.js"></script>
+		<script src="js/aboutMe.js"></script>
+	</head>
+	<body style="overflow: hidden;">
+		<div class="aboutMe">
+			<div class="bg bg1">
+				<!--头部-->
+				<div class="draw"></div>
+				<header class="clearfix header">
+					<div class="bg-left fl">
+						<em class="shan"></em>
+						<span class="s-one"></span>
+						<i>
+							<span class="wel">关于我</span>
+						</i>
+					</div>
+					<div class="back fl">
+						<nav class="fl work-ul">
+							<ul class="clearfix nav-ul">
+								<li class="fl animated swing infinite">
+									<a href="index.html">我的首页</a>
+								</li>
+								<li class="fl animated swing infinite">
+									<a href="myWorks2.html">我的作品</a>
+								</li>
+								<li class="fl animated swing infinite">
+									<a href="myHonor.html">我的荣誉</a>
+								</li>
+								<li class="fl animated swing infinite">
+									<a href="aboutMe.html">关于我</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</header>
+			</div>
+			<div class="myInfo">
+				<ul class="info-ul">
+					<li>
+						<a href="javascript:;">基本信息</a>
+					</li>
+					<li>
+						<a href="javascript:;">前端技能</a>
+					</li>
+					<li>
+						<a href="javascript:;">联系我</a>
+					</li>
+				</ul>
+				<div class="imgBox1">
+					<img src="img/15.png" alt="" />
+				</div>
+				<div class="imgBox2" id="imgBox2">
+					<img src="img/15.png" alt="" />
+				</div>
+				<div class="imgBox3">
+					<img src="img/15.png" alt="" />
+				</div>
+				<div class="layer"></div>
+				<div class="div1">
+					<span class="close"></span>
+					<p style="margin-top: 100px;">
+						姓&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp名：贾艳敏
+					</p>
+					<p>
+						姓&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp别：女
+					</p>
+					<p>
+						毕业院校：河北经贸大学
+					</p>
+					<p>
+						专&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp业:计算机科学与技术
+					</p>
+					<p>
+						爱&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp好：排球
+					</p>
+				</div>
+				<div class="div1">
+					<span class="close"></span>
+					<p style="margin-top: 100px;">
+						静态布局：HTML/HTML5/CSS/CSS3
+					</p>
+					<p>
+						框架：JQuery.js/vue.js/angular.js...
+					</p>
+					<p>
+						绘图：canvas/svg
+					</p>
+				</div>
+				<div class="div1">
+					<span class="close"></span>
+					<p style="margin-top: 100px;">
+						手机：15011531054
+					</p>
+					<p>
+						q&nbsp q：609418857
+					</p>
+					<p>
+						微信：18333185707
+					</p>
+				</div>
+			</div>
+			</div>
+            <canvas id="scratch" style="width: 800px; height: 470px;"></canvas>
+		    <script type="text/javascript">
+		        window.onload = function () {
+		            var canvas = document.getElementById("scratch");
+		
+		            // canvas dimensions
+		            var width = parseInt(canvas.style.width);
+		            var height = parseInt(canvas.style.height);
+		
+		            // retina
+		            var dpr = window.devicePixelRatio || 1;
+		            canvas.width = width * dpr;
+		            canvas.height = height * dpr;
+		            canvas.getContext("2d").scale(dpr, dpr);
+		
+		            // simulation
+		            var sim = new VerletJS(width, height, canvas);
+		            sim.friction = 1;
+		
+		            // entities
+		            var segment = sim.lineSegments([new Vec2(20, 10), new Vec2(40, 10), new Vec2(60, 10), new Vec2(80, 10), new Vec2(100, 10)], 0.02);
+		            var pin = segment.pin(0);
+		            var pin = segment.pin(4);
+		
+		            var tire1 = sim.tire(new Vec2(200, 50), 50, 30, 0.3, 0.9);
+		            var tire2 = sim.tire(new Vec2(400, 50), 70, 7, 0.1, 0.2);
+		            var tire3 = sim.tire(new Vec2(600, 50), 70, 3, 1, 1);
+		
+		            // animation loop
+		            var loop = function () {
+		                sim.frame(16);
+		                sim.draw();
+		                requestAnimFrame(loop);
+		            };
+		
+		            loop();
+		        };
+			</script>
+		</div>
+	</body>
+</html>

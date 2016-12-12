@@ -1,0 +1,130 @@
+@keyframes wel {
+  0% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes flash {
+  0% {
+    background: url(../img/shan.png) no-repeat;
+  }
+  100% {
+    background: none;
+  }
+}
+@keyframes light {
+  0% {
+    background: url(../img/light1.png) no-repeat;
+  }
+  100% {
+    background: none;
+  }
+}
+@keyframes light2 {
+  0% {
+    background: url(../img/9-1.png) no-repeat;
+  }
+  100% {
+    background: none;
+  }
+}
+/*头部*/
+.bg {
+  background: url(../img/bg.png);
+  width: 100%;
+  margin: 0 auto;
+}
+.bg .draw {
+  width: 1347px;
+  height: 100px;
+  margin: 0 auto;
+  display: none;
+}
+.bg header {
+  width: 1347px;
+  height: 100px;
+  margin: 0 auto;
+}
+.bg header .bg-left {
+  width: 400px;
+  height: 100%;
+  position: relative;
+}
+.bg header .bg-left .shan {
+  width: 166px;
+  height: 69px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  -webkit-animation: flash 1s infinite;
+}
+.bg header .bg-left .s-one {
+  width: 500px;
+  height: 200px;
+  position: absolute;
+  left: -2px;
+  top: -13px;
+  background: url(../img/2.png) no-repeat;
+}
+.bg header .bg-left i {
+  background: url(../img/1.png) no-repeat;
+  width: 142px;
+  height: 139px;
+  position: absolute;
+  left: 109px;
+  top: 28px;
+}
+.bg header .bg-left i .wel {
+  width: 142px;
+  height: 139px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  text-align: center;
+  line-height: 170px;
+  color: #eee9c3;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 微软雅黑;
+  -webkit-animation: wel 1s infinite;
+}
+.bg header nav {
+  width: 810px;
+  height: 100%;
+}
+.bg header nav ul {
+  background: url(../img/5.png) no-repeat left center;
+  background-size: 810px 55px ;
+  height: 55px;
+  margin-top: 30px;
+  position: relative;
+  z-index: 1;
+}
+.bg header nav ul li {
+  margin-top: 14px;
+  margin-left: 10px;
+  background: url(../img/6.png) no-repeat;
+  font-size: 16px;
+  font-family: 微软雅黑;
+  width: 115px;
+  height: 29px;
+  text-align: center;
+}
+.bg header nav ul li a {
+  color: #eee9c3;
+}
+.bg header .bg-right {
+  width: 134px;
+  height: 100%;
+  position: relative;
+}
+.bg header .bg-right span {
+  background: url(../img/leaf.png) no-repeat;
+  width: 79px;
+  height: 285px;
+  position: absolute;
+  left: 23px;
+  top: -11px;
+}
