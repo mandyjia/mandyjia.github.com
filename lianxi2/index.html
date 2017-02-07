@@ -1,0 +1,627 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/base.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+<script src="js/jquery-1.7.2.js"></script>
+<script>
+$(function (){
+	function change(a,b,c,d,e){
+    	var oList=document.getElementById(a).getElementsByTagName(b);
+    	var oCon=document.getElementById(c).getElementsByTagName(d);
+		for(var i=0;i<oList.length;i++){
+			oList[i].index=i;
+			oList[i].onmouseover=function(){
+				for(var j=0;j<oList.length;j++){
+					oList[j].className='';
+					oCon[j].className='hide';
+				}
+				this.className=e;
+				oCon[this.index].className='show';
+			}
+		}
+	}
+	change('m2_dotbox','a','m2_picbox','li','active');	
+	change('m2_rlist1','li','m2_rcon2','li','active1');
+	change('m4_list1','li','m4_con1','li','');
+	change('m5_clist1','li','m5_ccon1','li','active2');
+	change('m5_clist2','li','m5_ccon2','li','active2');
+	change('m5_rlist1','li','m5_rcon1','li','active2');
+
+	$.each($('#m4_box2 li'),function (){
+		var content=$(this);
+		var oList2=content.children().eq(0);
+		var oCon2=content.children().eq(1);
+		content.on('mouseover',function (){
+			oList2.attr('class','m4-list2 clearfix hide');
+			oCon2.attr('class','m4-con2 show');
+		});
+		content.on('mouseout',function (){
+			oList2.attr('class','m4-list2 clearfix show');
+			oCon2.attr('class','m4-con2 hide');
+		});
+	});
+});
+
+</script>
+</head>
+
+<body>
+<div class="head">
+   <div class="head-in clearfix">
+      <a href="javascript:;" class="company fl" title="畅想"></a>
+      <ul class="h-con2 fr clearfix">
+         <li class="fl clearfix"><a href="javascript:;" class="h-exp fl">客服</a><i class="h-arr fl"></i></li>
+         <li class="fl clearfix"><a href="javascript:;" class="h-exp fl">畅游全服务</a><i class="h-arr fl"></i></li>
+         <li class="fl clearfix"><a href="javascript:;" class="h-exp fl">畅游全游戏</a><i class="h-arr fl"></i></li>
+      </ul>
+      <ul class="h-con1 fr clearfix">
+         <li class="fl clearfix"><a href="javascript:;" class="h-tip1 fl"></a><a href="javascript:;" class="h-exp fl">注册</a></li>
+         <li class="fl clearfix"><a href="javascript:;" class="h-tip2 fl"></a><a href="javascript:;" class="h-exp fl">充值</a></li>
+         <li class="fl clearfix"><a href="javascript:;" class="h-tip3 fl"></a><a href="javascript:;" class="h-exp fl">畅游+</a></li>
+      </ul>
+   </div>
+</div>
+
+<div class="m1-line"></div>
+<div class="main-bbg">
+<div class="main-picbg">
+   
+   <div class="main clearfix">
+      <div class="main1">
+         <a href="javascript:;" class="m1-bg"></a>
+         <div class="m1-head clearfix" id="m1_head">
+            <a href="javascript:;" class="logo fl" title="灵魂回响"></a>
+            <ul class="top-nav1 fr clearfix" id="top_nav">
+               <li class="top-con1"><a href="javascript:;" class="top-btn"><h2>首页</h2><h3>HOME</h3></a></li> 
+               <li class="top-con2">
+                  <a href="javascript:;" class="top-btn"><h2>新闻公告</h2><h3>NEWS</h3></a>
+                  <p class="news-btn">
+                     <a href="javascript:;" title="详情">游戏新闻</a>
+                     <a href="javascript:;" title="详情">官方公告</a>
+                  </p>
+               </li>             
+               <li class="top-con1"><a href="javascript:;" class="top-btn"><h2>游戏特色</h2><h3>FEATURES</h3></a></li>
+               <li class="top-con2">
+                  <a href="javascript:;" class="top-btn"><h2>新手指南</h2><h3>NEWBIE</h3></a>
+                  <p class="newhands-btn">
+                     <a href="javascript:;" title="详情">新手指南</a>
+                     <a href="javascript:;" title="详情">职业专题</a>
+                     <a href="javascript:;" title="详情">资料站</a>
+                     <a href="javascript:;" title="详情">常见问题</a>
+                  </p>
+               </li>
+               <li class="top-con1"><a href="javascript:;" class="top-btn"><h2>游戏下载</h2><h3>DOWNLOAD</h3></a></li>
+               <li class="top-con1"><a href="javascript:;" class="top-btn"><h2>活动专区</h2><h3>ACTIVTY</h3></a></li>
+               <li class="top-con2">
+                  <a href="javascript:;" class="top-btn"><h2>视觉欣赏</h2><h3>VIDEO & PICTURE</h3></a>
+                  <p class="vision-btn">
+                     <a href="javascript:;" title="详情">游戏视频</a>
+                     <a href="javascript:;" title="详情">壁纸截图</a>
+                  </p>
+               </li>
+               <li class="top-con1"><a href="javascript:;" class="top-btn"><h2>玩家互动</h2><h3>INTERACTION</h3></a></li>
+               <li class="top-con1"><a href="javascript:;" class="top-btn"><h2>客户服务</h2><h3>SERVICE</h3></a></li>
+            </ul>
+         </div>
+       <a href="javascript:;" class="zan"></a>          
+      </div>
+      
+      <div class="main2">
+         <div class="m2-left fl">
+            <ul class="m2-lnav clearfix">
+               <li><a href="javascript:;" class="m2-download"></a></li>
+               <li><a href="javascript:;" class="m2-register"></a></li>
+               <li><a href="javascript:;" class="m2-recharge"></a></li>
+               <li><a href="javascript:;" class="m2-exchange"></a></li>
+               <li><a href="javascript:;" class="m2-newhand"></a></li>
+            </ul>
+            <div class="m2-lcon">
+               <ul class="m2-lpicbox" id="m2_picbox">
+                  <li class="show"><a href="javascript:;"><img src="img/main_a1 (1).jpg"/></a></li>
+                  <li class="hide"><a href="javascript:;"><img src="img/main_a1 (2).jpg"/></a></li>
+                  <li class="hide"><a href="javascript:;"><img src="img/main_a1 (3).jpg"/></a></li>
+                  <li class="hide"><a href="javascript:;"><img src="img/main_a1 (4).jpg"/></a></li>
+                  <li class="hide"><a href="javascript:;"><img src="img/main_a1 (5).jpg"/></a></li>
+               </ul>
+               <div class="m2-ldotbox clearfix" id="m2_dotbox">
+                  <a href="javascript:;" class="active"></a>
+                  <a href="javascript:;"></a>
+                  <a href="javascript:;"></a>
+                  <a href="javascript:;"></a>
+                  <a href="javascript:;"></a>
+               </div>
+            </div>
+         </div>
+         <div class="m2-right fl">
+            <div class="m2-r-t">
+               <p><a href="javascript:;" title="电信一区">电信一区 <i>【元素殿堂】</i> 欢迎进驻！</a></p>
+               <p><a href="javascript:;" title="网通一区">网通一区 <i>【雷霆之怒】</i> 欢迎进驻！</a></p>
+            </div>
+            <div class="m2-r-c clearfix">
+               <p class="fl">据您上次访问有<a href="#">200</a>条更新<a href="#" class="m2-plus"></a></p>
+               <ul class="m2-care fr clearfix">
+                  <li class="m2-look">关注：</li>
+                  <li><a href="javascript:;" title="微信" class="weixin"></a></li>
+                  <li><a href="javascript:;" title="新浪" class="sina"></a></li>
+                  <li><a href="javascript:;" title="QQ微博" class="QQweibo"></a></li>
+               </ul>
+            </div>
+            <div class="m2-r-b">
+               <ul class="m2-r-list clearfix" id="m2_rlist1">
+                  <li class="active1"><a href="#" title="综合" class="m2-r-comprehensive">综合</a></li>
+                  <li><a href="#" title="新闻" class="m2-r-news">新闻</a></li>
+                  <li><a href="#" title="公告" class="m2-r-notice">公告</a></li>
+                  <li><a href="#" title="媒体" class="m2-r-media">媒体</a></li>
+               </ul>
+               <div class="m2-r-conbox">
+                   <div class="m2-rcon1">
+                      <a href="#">4月8日大版开启 新职业术士魔神天降</a>
+                   </div>
+                   <ul class="m2-rcon2" id="m2_rcon2">
+                      <li class="show clearfix">
+                         <div class="m2-exp fl">
+                             <p><a href="#">【新闻】决战开启！6月4日全新版本Raid本上线</a></p>
+                             <p><a href="#">【新闻】决战开启！6月4日全新版本Raid本上线</a></p>
+                             <p><a href="#">【新闻】决战开启！6月4日全新版本Raid本上线</a></p>
+                             <p><a href="#">【新闻】决战开启！6月4日全新版本Raid本上线</a></p>
+                             <p><a href="#">【新闻】决战开启！6月4日全新版本Raid本上线</a></p>
+                             <p><a href="#">【新闻】决战开启！6月4日全新版本Raid本上线</a></p>
+                         </div>
+                         <div class="m2-date fr">
+                             <p>02/04</p>
+                             <p>02/04</p>
+                             <p>02/04</p>
+                             <p>02/04</p>
+                             <p>02/04</p>
+                             <p>02/04</p>
+                         </div>
+                      </li>
+                      <li class="hide clearfix">
+                         <div class="m2-exp fl">
+                             <p><a href="#">【新闻】竞技场上线！进入PVP激斗时代！</a></p>
+                             <p><a href="#">【新闻】竞技场上线！进入PVP激斗时代！</a></p>
+                             <p><a href="#">【新闻】竞技场上线！进入PVP激斗时代！</a></p>
+                             <p><a href="#">【新闻】竞技场上线！进入PVP激斗时代！</a></p>
+                             <p><a href="#">【新闻】竞技场上线！进入PVP激斗时代！</a></p>
+                             <p><a href="#">【新闻】竞技场上线！进入PVP激斗时代！</a></p>
+                         </div>
+                         <div class="m2-date fr">
+                             <p>03/19</p>
+                             <p>03/19</p>
+                             <p>03/19</p>
+                             <p>03/19</p>
+                             <p>03/19</p>
+                             <p>03/19</p>
+                         </div>
+                      </li>
+                      <li class="hide clearfix">
+                         <div class="m2-exp fl">
+                             <p><a href="#">【新闻】揭秘术士进化史 多张设计稿曝光</a></p>
+                             <p><a href="#">【新闻】揭秘术士进化史 多张设计稿曝光</a></p>
+                             <p><a href="#">【新闻】揭秘术士进化史 多张设计稿曝光</a></p>
+                             <p><a href="#">【新闻】揭秘术士进化史 多张设计稿曝光</a></p>
+                             <p><a href="#">【新闻】揭秘术士进化史 多张设计稿曝光</a></p>
+                             <p><a href="#">【新闻】揭秘术士进化史 多张设计稿曝光</a></p>
+                         </div>
+                         <div class="m2-date fr">
+                             <p>03/26</p>
+                             <p>03/26</p>
+                             <p>03/26</p>
+                             <p>03/26</p>
+                             <p>03/26</p>
+                             <p>03/26</p>
+                         </div>
+                      </li>
+                      <li class="hide clearfix">
+                         <div class="m2-exp fl">
+                             <p><a href="#">【新闻】两大满级副本特色揭秘 终极BOSS曝光</a></p>
+                             <p><a href="#">【新闻】两大满级副本特色揭秘 终极BOSS曝光</a></p>
+                             <p><a href="#">【新闻】两大满级副本特色揭秘 终极BOSS曝光</a></p>
+                             <p><a href="#">【新闻】两大满级副本特色揭秘 终极BOSS曝光</a></p>
+                             <p><a href="#">【新闻】两大满级副本特色揭秘 终极BOSS曝光</a></p>
+                             <p><a href="#">【新闻】两大满级副本特色揭秘 终极BOSS曝光</a></p>
+                         </div>
+                         <div class="m2-date fr">
+                             <p>06/06</p>
+                             <p>06/06</p>
+                             <p>06/06</p>
+                             <p>06/06</p>
+                             <p>06/06</p>
+                             <p>06/06</p>
+                         </div>
+                      </li>
+                   </ul>
+                   <p class="m2-rcon3">
+                      <a href="#" class="m2-plus2 fl"></a>
+                      <a href="#" class="fl">更多信息</a>
+                   </p>
+               </div>  
+            </div>
+         </div>
+      </div>
+   
+      <div class="main3 clearfix">
+         <a href="javascript:;"><img src="img/main3-1.jpg" /></a>
+         <a href="javascript:;"><img src="img/main3-2.jpg" /></a>
+         <a href="javascript:;"><img src="img/main3-3.jpg" /></a>
+         <a href="javascript:;" class="m3-last"><img src="img/main3-4.jpg" /></a>
+      </div>
+   
+      <div class="main4 clearfix">
+         <div class="m4-left fl">
+            <ul class="m4-list1 clearfix" id="m4_list1">
+               <li><a href="javascript:;" class="shushi"></a></li>
+               <li><a href="javascript:;" class="shenshe"></a></li>
+               <li><a href="javascript:;" class="shouhu"></a></li>
+               <li><a href="javascript:;" class="mofa"></a></li>
+               <li><a href="javascript:;" class="zhanshi"></a></li>
+               <li><a href="javascript:;" class="cike"></a></li>
+            </ul>
+            <ul class="m4-con1" id="m4_con1">
+               <li class="show"><a href="javascript:;"><img src="img/m4-shushi.jpg" /></a></li>
+               <li class="hide"><a href="javascript:;"><img src="img/m4-shenshe.jpg" /></a></li>
+               <li class="hide"><a href="javascript:;"><img src="img/m4-shouhu.jpg" /></a></li>
+               <li class="hide"><a href="javascript:;"><img src="img/m4-mofa.jpg" /></a></li>
+               <li class="hide"><a href="javascript:;"><img src="img/m4-zhanshi.jpg" /></a></li>
+               <li class="hide"><a href="javascript:;"><img src="img/m4-cike.jpg" /></a></li>
+            </ul>
+         </div>
+        
+         <div class="m4-right fr">
+             <div class="m4-r-t clearfix">
+                <span class="m4-clock fl"></span>
+                <h2 class="fl">活动中心</h2>
+             </div>
+             <ul class="m4-r-b" id="m4_box2">
+                <li>
+                   <div class="m4-list2 clearfix show">
+                       <a href="#" class="m4-exp1 fl">1女武神的秘宝</a>
+                       <p class="m4-exp2 fr">进行中</p>
+                   </div>
+                   <div class="m4-con2 show">
+                       <a href="#"><img src="img/1.jpg" title="女武神的秘宝"/></a>
+                       <div class="opabox">
+                          <div class="opa"></div>
+                          <a href="#" class="m4-exp3">女武神的秘宝</a>
+                       </div>
+                   </div>
+                </li>
+                <li>
+                   <div class="m4-list2 clearfix show">
+                       <a href="#" class="m4-exp1 fl">2神谕者的成长礼</a>
+                       <p class="m4-exp2 fr">进行中</p>
+                   </div>
+                   <div class="m4-con2 hide">
+                       <a href="#"><img src="img/1.jpg" title="女武神的秘宝"/></a>
+                       <div class="opabox">
+                          <div class="opa"></div>
+                          <a href="#" class="m4-exp3">3女武神的秘宝</a>
+                       </div>
+                   </div>
+                </li>
+                <li>
+                   <div class="m4-list2 clearfix">
+                       <a href="#" class="m4-exp1 fl">4女神赐福助力成长，老友归来大礼相赠</a>
+                       <p class="m4-exp2 fr">进行中</p>
+                   </div>
+                   <div class="m4-con2 hide">
+                       <a href="#"><img src="img/1.jpg" title="女武神的秘宝"/></a>
+                       <div class="opabox">
+                          <div class="opa"></div>
+                          <a href="#" class="m4-exp3">女武神的秘宝</a>
+                       </div>
+                   </div>
+                </li>
+                <li>
+                   <div class="m4-list2 clearfix">
+                       <a href="#" class="m4-exp1 fl">5赫尔墨斯的宝库，尼凯亚大陆奇珍异宝</a>
+                       <p class="m4-exp2 fr">进行中</p>
+                   </div>
+                   <div class="m4-con2 hide">
+                       <a href="#"><img src="img/1.jpg" title="女武神的秘宝"/></a>
+                       <div class="opabox">
+                          <div class="opa"></div>
+                          <a href="#" class="m4-exp3">6女武神的秘宝</a>
+                       </div>
+                   </div>
+                </li>
+                <li>
+                   <div class="m4-list2 clearfix">
+                       <a href="#" class="m4-exp1 fl">绑定畅游+，送十格背包</a>
+                       <p class="m4-exp2 fr">进行中</p>
+                   </div>
+                   <div class="m4-con2 hide">
+                       <a href="#"><img src="img/1.jpg" title="女武神的秘宝"/></a>
+                       <div class="opabox">
+                          <div class="opa"></div>
+                          <a href="#" class="m4-exp3">女武神的秘宝</a>
+                       </div>
+                   </div>
+                </li>
+                <li>
+                   <div class="m4-list2 clearfix">
+                       <a href="#" class="m4-exp1 fl">每日登录有惊喜</a>
+                       <p class="m4-exp2 fr">进行中</p>
+                   </div>
+                   <div class="m4-con2 hide">
+                       <a href="#"><img src="img/1.jpg" title="女武神的秘宝"/></a>
+                       <div class="opabox">
+                          <div class="opa"></div>
+                          <a href="#" class="m4-exp3">女武神的秘宝</a>
+                       </div>
+                   </div>
+                </li>
+             </ul>
+         </div>
+      </div>
+      
+      <div class="main5 clearfix">
+         <div class="m5-left fl">
+            <div class="m5-l-t">
+               <h2>快捷入口</h2>
+               <div class="m5-l-list clearfix">
+                  <ul class="fl">
+                     <li><a href="javascript:;">·账号管理</a></li>
+                     <li><a href="javascript:;">·账号安全</a></li>
+                     <li><a href="javascript:;">·BUG提交</a></li>
+                     <li><a href="javascript:;">·玩家社区</a></li>
+                  </ul>
+                  <ul class="fr">
+                     <li><a href="javascript:;">·兑换中心</a></li>
+                     <li><a href="javascript:;">·畅游知道</a></li>
+                     <li><a href="javascript:;">·客户端FAQ</a></li>
+                     <li><a href="javascript:;">·加速器下载</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="m5-l-c">
+               <div>
+                  <a href="javascript:;" class="m5-l-cpic"><img src="img/main_a3.jpg" /></a>
+                  <a href="javascript:;" class="m5-larr"></a>
+                  <a href="javascript:;" class="m5-rarr"></a>
+               </div>
+               <div class="m5-cooperation">
+                  <div class="m5-coo">媒体合作中心</div>
+                  <div class="m5-cooclain">
+                     <a href="javascript:;">17173</a>
+                     <a href="javascript:;">多玩</a>
+                     <a href="javascript:;">太平洋</a>
+                     <a href="javascript:;">电玩巴士</a>
+                     <a href="javascript:;">新浪</a>
+                     <a href="javascript:;">搜狐</a>
+                     <a href="javascript:;">百度</a>
+                  </div>
+               </div>
+            </div>
+            <div class="m5-l-b">
+               <a href="javascript:;"></a>
+            </div>      
+         </div>
+         <div class="m5-center fl">
+             <div class="m5-c-top">    
+                 <div class="m5-c-t1 clearfix">
+                    <span class="m5-ctalk fl"></span>
+                    <h2 class="fl">玩家交流</h2>
+                 </div>
+                 <div class="m5-c-b1">
+                    <div class="m5-morebox clearfix">
+                       <a href="javascript:;" class="m5-plus fl"></a><a href="javascript:;" class="m5-more fl">更多信息</a>
+                    </div>
+                    <ul class="m5-c-list1 clearfix" id="m5_clist1">
+                       <li class="active2"><a href="javascript:;">玩家攻略</a></li>
+                       <li><a href="javascript:;">论坛热帖</a></li>
+                       <li><a href="javascript:;">社区精华</a></li>
+                    </ul>
+                    <ul class="m5-c-con1" id="m5_ccon1">
+                       <li class="show clearfix">
+                          <a href="javascript:;" class="m5-c-tpic fl"><img src="img/wj.jpg" /></a>
+                          <div class="m5-c-texp fl">
+                              <a href="javascript:;">·生活技能之烹饪技能详细解读</a>
+                              <a href="javascript:;">·生活技能之烹饪技能详细解读</a>
+                              <a href="javascript:;">·生活技能之烹饪技能详细解读</a>
+                              <a href="javascript:;">·生活技能之烹饪技能详细解读</a>
+                              <a href="javascript:;">·生活技能之烹饪技能详细解读</a>
+                              <a href="javascript:;">·生活技能之烹饪技能详细解读</a>
+                              <a href="javascript:;">·生活技能之烹饪技能详细解读</a>
+                              <a href="javascript:;">·生活技能之烹饪技能详细解读</a>
+                          </div>
+                       </li>
+                       <li class="hide clearfix">
+                          <a href="javascript:;" class="m5-c-tpic fl"><img src="img/wj.jpg" /></a>
+                          <div class="m5-c-texp fl">
+                              <a href="javascript:;">·称号：发现森林之秘 任务全程攻略</a>
+                              <a href="javascript:;">·称号：发现森林之秘 任务全程攻略</a>
+                              <a href="javascript:;">·称号：发现森林之秘 任务全程攻略</a>
+                              <a href="javascript:;">·称号：发现森林之秘 任务全程攻略</a>
+                              <a href="javascript:;">·称号：发现森林之秘 任务全程攻略</a>
+                              <a href="javascript:;">·称号：发现森林之秘 任务全程攻略</a>
+                              <a href="javascript:;">·称号：发现森林之秘 任务全程攻略</a>
+                              <a href="javascript:;">·称号：发现森林之秘 任务全程攻略</a>
+                          </div>
+                       </li>
+                       <li class="hide clearfix">
+                          <a href="javascript:;" class="m5-c-tpic fl"><img src="img/wj.jpg" /></a>
+                          <div class="m5-c-texp fl">
+                              <a href="javascript:;">·灵魂回响生活技能玩法介绍（一）</a>
+                              <a href="javascript:;">·灵魂回响生活技能玩法介绍（一）</a>
+                              <a href="javascript:;">·灵魂回响生活技能玩法介绍（一）</a>
+                              <a href="javascript:;">·灵魂回响生活技能玩法介绍（一）</a>
+                              <a href="javascript:;">·灵魂回响生活技能玩法介绍（一）</a>
+                              <a href="javascript:;">·灵魂回响生活技能玩法介绍（一）</a>
+                              <a href="javascript:;">·灵魂回响生活技能玩法介绍（一）</a>
+                              <a href="javascript:;">·灵魂回响生活技能玩法介绍（一）</a>
+                          </div>
+                       </li>
+                    </ul>
+                 </div>
+             </div>  
+             <div class="m5-c-bottom">    
+                 <div class="m5-c-t2 clearfix">
+                    <span class="m5-cmedia fl"></span>
+                    <h2 class="fl">媒体专区</h2>
+                 </div>
+                 <div class="m5-c-b2">
+                    <div class="m5-morebox clearfix">
+                       <a href="javascript:;" class="m5-plus fl"></a><a href="javascript:;" class="m5-more fl">更多信息</a>
+                    </div>
+                    <ul class="m5-c-list1 clearfix" id="m5_clist2">
+                       <li class="active2"><a href="javascript:;">17173</a></li>
+                       <li><a href="javascript:;">新浪爱问</a></li>
+                       <li><a href="javascript:;">太平洋游戏</a></li>
+                    </ul>
+                    <ul class="m5-c-con1" id="m5_ccon2">
+                       <li class="show clearfix">
+                          <a href="javascript:;" class="m5-c-tpic fl"><img src="img/wj.jpg" /></a>
+                          <div class="m5-c-texp fl">
+                              <a href="javascript:;">·生活技能之烹饪技能详细解读</a>
+                              <a href="javascript:;">·生活技能之烹饪技能详细解读</a>
+                              <a href="javascript:;">·生活技能之烹饪技能详细解读</a>
+                              <a href="javascript:;">·生活技能之烹饪技能详细解读</a>
+                              <a href="javascript:;">·生活技能之烹饪技能详细解读</a>
+                              <a href="javascript:;">·生活技能之烹饪技能详细解读</a>
+                              <a href="javascript:;">·生活技能之烹饪技能详细解读</a>
+                              <a href="javascript:;">·生活技能之烹饪技能详细解读</a>
+                          </div>
+                       </li>
+                       <li class="hide clearfix">
+                          <a href="javascript:;" class="m5-c-tpic fl"><img src="img/wj.jpg" /></a>
+                          <div class="m5-c-texp fl">
+                              <a href="javascript:;">·称号：发现森林之秘 任务全程攻略</a>
+                              <a href="javascript:;">·称号：发现森林之秘 任务全程攻略</a>
+                              <a href="javascript:;">·称号：发现森林之秘 任务全程攻略</a>
+                              <a href="javascript:;">·称号：发现森林之秘 任务全程攻略</a>
+                              <a href="javascript:;">·称号：发现森林之秘 任务全程攻略</a>
+                              <a href="javascript:;">·称号：发现森林之秘 任务全程攻略</a>
+                              <a href="javascript:;">·称号：发现森林之秘 任务全程攻略</a>
+                              <a href="javascript:;">·称号：发现森林之秘 任务全程攻略</a>
+                          </div>
+                       </li>
+                       <li class="hide clearfix">
+                          <a href="javascript:;" class="m5-c-tpic fl"><img src="img/wj.jpg" /></a>
+                          <div class="m5-c-texp fl">
+                              <a href="javascript:;">·灵魂回响生活技能玩法介绍（一）</a>
+                              <a href="javascript:;">·灵魂回响生活技能玩法介绍（一）</a>
+                              <a href="javascript:;">·灵魂回响生活技能玩法介绍（一）</a>
+                              <a href="javascript:;">·灵魂回响生活技能玩法介绍（一）</a>
+                              <a href="javascript:;">·灵魂回响生活技能玩法介绍（一）</a>
+                              <a href="javascript:;">·灵魂回响生活技能玩法介绍（一）</a>
+                              <a href="javascript:;">·灵魂回响生活技能玩法介绍（一）</a>
+                              <a href="javascript:;">·灵魂回响生活技能玩法介绍（一）</a>
+                          </div>
+                       </li>
+                    </ul>
+                 </div>
+             </div>
+         </div>
+         <div class="m5-right fl">
+            <div class="m5-r-top">
+               <div class="m5-r-t1 clearfix">
+                    <span class="m5-rgame fl"></span>
+                    <h2 class="fl">游戏资料</h2>
+               </div>
+               <div class="m5-r-b1">
+                  <ul>
+                     <li class="clearfix">
+                        <p class="m5-r-btit fl">新手入门<span class="m5-r-barr"></span></p>
+                        <div class="m5-r-bexp fl">
+                            <a href="javascript:;">注册账号</a>
+                            <a href="javascript:;">下载游戏</a>
+                            <a href="javascript:;" class="m5-r-blast">登录游戏</a>
+                        </div>
+                     </li>
+                     <li class="clearfix">
+                        <p class="m5-r-btit fl">职业介绍<span class="m5-r-barr"></span></p>
+                        <div class="m5-r-bexp fl">
+                            <a href="javascript:;">刺客</a>
+                            <a href="javascript:;">神射手</a>
+                            <a href="javascript:;">守护者</a>
+                            <a href="javascript:;" class="m5-r-blast">魔法师</a>
+                        </div>
+                     </li>
+                     <li class="clearfix">
+                        <p class="m5-r-btit fl">旅行者日记<span class="m5-r-barr"></span></p>
+                        <div class="m5-r-bexp fl">
+                            <a href="javascript:;">雷班斯</a>
+                            <a href="javascript:;">弗尔图斯</a>
+                            <a href="javascript:;" class="m5-r-blast">赫利亚纳</a>
+                        </div>
+                     </li>
+                     <li class="m5-r-bb clearfix">
+                        <p class="m5-r-btit fl">神谕者指引<span class="m5-r-barr"></span></p>
+                        <div class="m5-r-bexp fl">
+                            <a href="javascript:;">1级-19级</a>
+                            <a href="javascript:;">20级-39级</a>
+                            <a href="javascript:;" class="m5-r-blast">40级-49级</a>
+                        </div>
+                     </li>
+                  </ul>
+                  <h2><a href="javascript:;">进入资料站</a></h2>
+               </div>
+            </div>
+            <div class="m5-r-bottom">
+               <div class="m5-r-t2 clearfix">
+                    <span class="m5-rlook fl"></span>
+                    <h2 class="fl">视觉欣赏</h2>
+               </div>
+               <div class="m5-r-b2">
+                    <div class="m5-morebox clearfix">
+                       <a href="javascript:;" class="m5-plus fl"></a><a href="javascript:;" class="m5-more fl">更多信息</a>
+                    </div>
+                    <ul class="m5-c-list1 clearfix" id="m5_rlist1">
+                       <li class="active2"><a href="javascript:;">游戏视频</a></li>
+                       <li><a href="javascript:;">游戏截图</a></li>
+                    </ul>
+                    <ul class="m5-r-con1" id="m5_rcon1">
+                       <li class="show clearfix">
+                          <div class="m5-r-bexp1 fl">
+                              <a href="javascript:;"><img src="img/m5-1.jpg" /></a>
+                              <a href="javascript:;"><img src="img/m5-2.jpg" /></a>
+                              <a href="javascript:;"><img src="img/m5-3.jpg" /></a>
+                              <a href="javascript:;"><img src="img/m5-4.jpg" /></a>
+                          </div>
+                       </li>
+                       <li class="hide clearfix">
+                          <div class="m5-r-bexp1 fl">
+                              <a href="javascript:;"><img src="img/m5-2.jpg" /></a>
+                              <a href="javascript:;"><img src="img/m5-2.jpg" /></a>
+                              <a href="javascript:;"><img src="img/m5-4.jpg" /></a>
+                              <a href="javascript:;"><img src="img/m5-4.jpg" /></a>
+                          </div>
+                       </li>
+                    </ul>
+               </div>
+               
+            </div>
+         </div>
+      </div>  
+   
+      <div class="main6">
+         <div class="m6-notice">
+            <img src="img/game_anc.jpg" class="m6-pic"/>
+            <h3>健康游戏公告</h3>
+         </div>
+         <p>抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。</p>
+         <p>本游戏适合18周岁以上的成年人用户，未满18周岁的未成年用户请在家长的监督下进行游戏。</p>
+      </div>   
+   </div> 
+     
+</div>
+</div>
+
+<div class="footer">
+   <div class="f-line"></div>
+   <div class="f-con clearfix">
+      <div class="f-logo fl"></div>
+      <div class="f-police fl"></div>
+      <div class="f-exp fl">
+         <p>北京畅游时代数码技术有限公司版权所有COPYRIGHT&copy;2011 CHANGYOU.COM LIMITED.ALL RIGHTS RESERVED.法律声明|联系我们</p>
+         <p>京网文[2011]0260-093号|京ICP证：070525号</p>
+      </div>
+   </div>
+</div>
+
+</body>
+</html>
