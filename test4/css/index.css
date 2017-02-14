@@ -213,7 +213,7 @@
 }
 .show4 .bottom .left li.fir{
 	height: 6.25rem;
-	width: 3.5rem;
+	width: 3rem;
 	background: url(../img/left-t.png) no-repeat;
 	background-size: 100% 100%;
 	line-height: 6.25rem;
@@ -221,7 +221,7 @@
 }
 .show4 .bottom .left li.sec{
 	height: 2rem;
-	width: 3.5rem;
+	width: 3rem;
 	background: url(../img/left-b.png) no-repeat;
 	background-size: 100% 100%;
 	line-height: 2rem;
@@ -229,12 +229,12 @@
 	margin-top: 0.25rem;
 }
 .show4 .bottom .right{
-	width: 11.7rem;
+	width: 12.2rem;
 	height: 8.5rem;
 	margin-left: 0.3rem;
 }
 .show4 .bottom .right li{
-	width: 5.74rem;
+	width: 6.5rem;
 	height: 3rem;
 	background: url(../img/right-1.png) no-repeat;
 	background-size: 100% 100%;
@@ -242,7 +242,10 @@
 	font-size: 0.1rem;
 	color: #FFFFFF;
 }
-.show4 .bottom .right li h3{
+.show4 .bottom .right li.sec{
+	width: 5.5rem;
+}
+.show4 .bottom .right li .p1{
 	position: absolute;
 	left: 0;
 	bottom: 0;
@@ -252,6 +255,7 @@
 	width: 100%;
 	text-align: center;
 	line-height: 0.75rem;
+	font-family: "微软雅黑";
 }
 .show4 .bottom .right li.thi{
 	margin-top: 0.25rem;
