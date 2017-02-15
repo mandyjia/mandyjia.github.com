@@ -19,7 +19,7 @@
 	height: 0.95rem;
 	margin-left: 0.25rem;
 	margin-top: 0.5rem;
-	background: url(../img/ho.png);
+	/*background: url(../img/ho.png);*/
 	background-size:100% 100%;
 }
 .top .head_t strong{
@@ -83,17 +83,16 @@
 }
 .show2 span{
 	width: 14.25rem;
-	height: 2.55rem;
+	height: 2rem;
 	background: url(../img/02.png) no-repeat;
 	display: block;
 	background-size:100% 100%;
-	
 	padding-bottom: 0.8rem;
 }
 .show2 .text1{
 	position: absolute;
 	left: 4.3rem;
-	top: 1.8rem;
+	top: 1.5rem;
 	color: #fff;
 	font-weight: bold;
 	font-size: 0.6rem;
@@ -104,11 +103,14 @@
 .show2 .text2{
 	position: absolute;
 	left: 4.3rem;
-	top: 3rem;
-	color: #24b9ac;
+	top: 2.6rem;
+	color: #ffc600;
 	font-size: 0.325rem;
 }
 
+.show2 .pic{
+	margin-top: 0.35rem;
+}
 .show2 .pic li{
 	width: 5.2rem;
 	height: 4.5rem;	
@@ -163,7 +165,7 @@
 }
 .show4 span{
 	width: 14.25rem;
-	height: 2.55rem;
+	height: 2rem;
 	background: url(../img/04.png) no-repeat;
 	display: block;
 	background-size:100% 100%;
@@ -172,7 +174,7 @@
 .show4 .text1{
 	position: absolute;
 	left: 4.8rem;
-	top: 1.9rem;
+	top: 1.6rem;
 	color: #fff;
 	font-weight: bold;
 	font-size: 0.55rem;
@@ -184,14 +186,14 @@
 .show4 .text2{
 	position: absolute;
 	left: 4.8rem;
-	top: 3rem;
-	color: #24b9ac;
+	top: 2.65rem;
+	color: #ffc600;
 	font-size: 0.3rem;
 }
 .show4 .text3{
 	position: absolute;
 	left: 4.8rem;
-	top: 3.7rem;
+	top: 3.3rem;
 	color: #ffc600;
 	font-size: 0.3rem;
 	height: 0.75rem;
@@ -278,7 +280,7 @@
 	height: 1.45rem;
 	background: #324353;
 	margin-top: 0.25rem;
-	padding-left: 0.25rem;
+	/*padding-left: 0.25rem;*/
 	padding-top: 0.55rem;
 }
 .show4 .bottom .right li.last p{
@@ -580,11 +582,20 @@ table{
 .show3 em{
 	color: #ffc600;
 }
+/*.show3 b{
+	background: url(../img/arrow.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 0;
+	top: 0rem;
+	width: 3.9rem;
+	height: 0.15rem;
+}*/
 .show3 .text2{
 	position: absolute;
 	left: 1.75rem;
 	top: 2.3rem;
-	color: #24b9ac;
+	color: #ffc600;
 	font-size: 0.3rem;
 }
 .part5{font-size: 0.35rem;}
@@ -592,8 +603,8 @@ table{
 text-align:center; margin: 3.5rem auto 0;}
 .part5_con p{width: 95%; overflow: hidden;padding-left: 2%;word-wrap:break-word;}
 .sz_con{margin-top: 1%;padding-left: 5%;}
-.sz_word1{color: #fff;}
-.sz_word2{color: white;background:#41a3a4;margin-top: 0.25rem;margin-bottom: 5%;padding: 1% 0% ;}
+.sz_word1{color: #fff; position: relative;}
+.sz_word2{position: relative; color: white;background:#41a3a4;margin-top: 0.25rem;margin-bottom: 5%;padding: 1% 0% ;}
 .sz_word3{text-align:left;line-height: 1.5em; color: #fff;}
 .show3 strong{
 	width: 100%;
