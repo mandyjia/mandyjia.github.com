@@ -76,6 +76,9 @@ input{ outline:none;}
 }
 .top ul li a{
 	color: #6d6d6d;
+	width:100%;
+	height: 100%;
+	display: block;
 }
 /*尾部*/
 footer{
