@@ -7,64 +7,34 @@
 		<link rel="stylesheet" href="css/base.css" />
 		<link rel="stylesheet" href="css/index.css" />
 		<link rel="stylesheet" href="css/roll.css" />
-		<script src="js/top.js"></script>		
+			
 		<link rel="stylesheet" href="css/idangerous.swiper.css">
       	<script src="js/idangerous.swiper.js"></script>
-		<script>
-			(function(win,doc){
-				function change(){
-					doc.documentElement.style.fontSize = 20/320*doc.documentElement.clientWidth+'px';					
-				}
-				change();
-				win.addEventListener('resize',change,false);
-			})(window,document);
-		</script>
-		<!--<link rel="stylesheet" href="style/idangerous.swiper.css">
-      	<script src="js/idangerous.swiper.js"></script>-->
+		<script src="js/common.js"></script>
 		<script type="text/javascript" src="http://geekca.cubead.com/static/danei.js"></script>
 	</head>
 	<body onload="changeUrl();">
 		<!--页面内部放用以下代码-->
-<script type="text/javascript">
-function changeUrl(){
-	var url=location.href;
-	var s = url.indexOf("?");
-	if(s!=-1){
-		var getStr=url.substr(s);
-		var arr=document.getElementsByTagName("a");
-		for(var i=0;i<arr.length;i++){
-			var href=arr[i].getAttribute("href");
-			if(href.indexOf("?")==-1){
-				arr[i].setAttribute("href",href+getStr);
-			}else{
-				arr[i].setAttribute("href",href+getStr.replace("?","&"));
-			}
-			
-		}
-	}
-}
-</script>
 		<script type="text/javascript">
-			window.onload = function () {
-		    var oItem = document.getElementById('top');
-		    var oItem2 = document.getElementById('top2');
-		    var top = getPos(oItem).top;
-		    window.onscroll=function(){
-		        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-		        if(scrollTop>= top){
-		            //吸住
-		            oItem.style.position='fixed';
-		            oItem.style.top='0';
-		            oItem2.style.display='block';
-		        }else{
-		            //回去
-		            oItem.style.position='static';
-		            oItem2.style.display='none';
-		        }
-		    };
-		};
+		function changeUrl(){
+			var url=location.href;
+			var s = url.indexOf("?");
+			if(s!=-1){
+				var getStr=url.substr(s);
+				var arr=document.getElementsByTagName("a");
+				for(var i=0;i<arr.length;i++){
+					var href=arr[i].getAttribute("href");
+					if(href.indexOf("?")==-1){
+						arr[i].setAttribute("href",href+getStr);
+					}else{
+						arr[i].setAttribute("href",href+getStr.replace("?","&"));
+					}
+					
+				}
+			}
+		}
 		</script>
-		
+		<script src="js/top.js"></script>	
 		<div class="Bigbox">
 			<!--整体头部-->
 			<div class="top" id="top">
@@ -90,7 +60,7 @@ function changeUrl(){
 						<a href="javascript:;">就业</a>
 					</li>
 					<li class="fl">
-						<a href="javascript:;">达内介绍</a>
+						<a href="aboutUs.html">达内介绍</a>
 					</li>
 				</ul>
 			</div>

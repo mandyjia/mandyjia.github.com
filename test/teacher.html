@@ -3,21 +3,15 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width; initial-scale=1.0, maximum-scale=1, user-scalable=no">	
-		<title></title>
-		<script>
-			(function(win,doc){
-				function change(){
-					doc.documentElement.style.fontSize = 20/320*doc.documentElement.clientWidth+'px';					
-				}
-				change();
-				win.addEventListener('resize',change,false);
-			})(window,document);
-		</script>
+		<title></title>		
 		<link rel="stylesheet" href="css/base.css" />
 		<link rel="stylesheet" href="css/teacher.css"/>
 		<link rel="stylesheet" href="css/roll.css" />
+		<!--无缝滚动-->
 		<script src="js/ad.js"></script>
 		<script src="js/jquery.js"></script>
+		<script src="js/common.js"></script>
+		<script src="js/top.js"></script>
 	</head>
 	<body>
 		<div class="t-Box">
@@ -40,6 +34,31 @@
 					</li>
 					<li class="fl">
 						<a href="teacher.html">师资</a>
+					</li>
+					<li class="fl">
+						<a href="javascript:;">就业</a>
+					</li>
+					<li class="fl">
+						<a href="aboutUs.html">达内介绍</a>
+					</li>
+				</ul>
+			</div>
+			<div class="top top2" id="top2">
+				<div class="head_t clearfix">
+					<span class="house fl"></span>
+					<strong class="fl"></strong>
+					<em class="fl"></em>
+				</div>
+				<ul class="head_b clearfix">
+					<!--这是否要跳转-->
+					<li class="fl">
+						<a href="javascript:;">首页</a>
+					</li>
+					<li class="fl">
+						<a href="javascript:;">才高班</a>
+					</li>
+					<li class="fl">
+						<a href="javascript:;">师资</a>
 					</li>
 					<li class="fl">
 						<a href="javascript:;">就业</a>
