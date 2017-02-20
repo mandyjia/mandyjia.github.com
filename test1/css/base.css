@@ -1,0 +1,114 @@
+*{padding:0; margin:0;}
+h1,h2,h3,h4,h5,h6{font-size:12px; font-weight:normal;}
+li{list-style:none;}
+a{color:#000; text-decoration:none;}
+b,strong{font-weight:normal;}
+i,em{font-style:normal;}
+
+img{vertical-align:top;}
+.clearfix:after{display:block; content:''; clear:both;}
+.clearfix{zoom:1;}
+.fl{float:left;}
+.fr{float:right;}
+input{ outline:none;}
+body{font-family: "微软雅黑";}
+/*整体头部*/
+.top{ 
+	width: 100%; 
+	height: 3.25rem; 
+	z-index:999; 
+	margin-top:0;
+}
+.top .head_t{
+	width: 100%;
+	height: 2rem;
+	background: #000;
+}
+.top2{
+	display: none;
+}
+.top .head_t span{
+	width: 1.125rem;
+	height: 0.95rem;
+	margin-left: 0.25rem;
+	margin-top: 0.5rem;
+	background: url(../img/house.png);
+	background-size:100% 100%;
+}
+.top .head_t h1{
+	width: 3.475rem;
+	height: 1.1rem;
+	background: url(../img/logo.png) no-repeat;
+	background-size:100% ;
+	margin-left: 4.9rem;
+	margin-top: 0.5rem;
+}
+.top .head_t h1 a{
+	width: 3.475rem;
+	height: 1.1rem;
+	text-indent: -999em;
+	display: block;
+}
+.top .head_t .tel{
+	margin-left: 3rem;
+	margin-top: 0.55rem;
+}
+.top .head_t .tel em{
+	font-style: italic;
+}
+.top .head_t .tel a{
+	color: #fff;
+	font-size: 0.35rem;
+	display: block;
+}
+.top ul{
+	background: #ddd;
+	font-family: "微软雅黑";
+	font-size: 0.475rem;
+	height: 1.25rem;
+	width: 100%;
+	margin: 0 auto;
+}
+.top ul li{
+	margin-top: 0.4rem;
+	width: 3.1rem;
+	text-align: center;
+}
+.top ul li a{
+	color: #6d6d6d;
+	width:100%;
+	height: 100%;
+	display: block;
+}
+/*尾部*/
+footer{
+	width: 100%;
+	height: 1.85rem;
+	background: #000;
+	text-align: center;
+	padding-top: 0.65rem;
+}
+footer p{
+	font-size: 0.3rem;
+	color: #858585;
+	font-style: italic;
+	font-family: "微软雅黑";
+	line-height: 0.425rem;
+}
+.part5{font-size: 0.35rem;}
+.part5_con{position: relative;overflow: hidden;width: 13.55rem;
+text-align:center; margin: 0.625rem auto 0;}
+.part5_con p{width: 95%; overflow: hidden;padding-left: 2%;word-wrap:break-word;}
+.sz_con{margin-top: 1%;padding-left: 5%;}
+.sz_word1{color: #fff; position: relative;}
+.sz_word2{position: relative; color: white;background:#41a3a4;margin-top: 0.25rem;margin-bottom: 5%;padding: 1% 0% ;}
+.sz_word3{text-align:left;line-height: 1.5em; color: #fff;}
+.show3 strong{
+	width: 100%;
+	height: 7.1rem;
+	background: #324353;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+}
