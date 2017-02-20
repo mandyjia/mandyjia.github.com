@@ -23,8 +23,7 @@ table{
 	height: 5.3rem;
 	overflow:hidden; 
 	margin: 0 auto;
-	padding-top: 0.1rem;
-	/*letter-spacing:0.1rem;*/
+	padding-top: 0.1rem;	
 	padding-bottom: 0.1rem;
 	font-size:0.425rem;
 }
