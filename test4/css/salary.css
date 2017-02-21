@@ -8,7 +8,7 @@
 .banner h2{
 	font-size: 1rem;
 	color: #fff;
-	padding: 3.05rem 2.1rem 1.55rem;
+	padding: 3.05rem 2.1rem 1rem;
 	font-weight: bold;
 }
 .banner h2 span{
@@ -28,7 +28,7 @@
 .banner .text1{
 	font-size: 0.625rem;
 	color: #fff;
-	background: #0dfde6;
+	background: #21c0b1;
 	font-weight: bold;
 	height: 1rem;
 	width: 9rem;
@@ -39,7 +39,7 @@
 .banner .text2{
 	font-size: 0.425rem;
 	color: #ffc600;
-	padding-top: 0.475rem;
+	padding-top: 0.9rem;
 	padding-left: 3.1rem;
 }
 /*第一部分*/

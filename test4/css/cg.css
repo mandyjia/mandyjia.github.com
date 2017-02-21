@@ -31,11 +31,11 @@
 	font-weight: bold;
 }
 .banner .text3{
-	width: 6.425rem;
-	height: 0.625rem;
-	line-height: 0.625rem;
+	width: 10rem;
+	height: 1rem;
+	line-height: 1rem;
 	text-align: center;
-	font-size: 0.35rem;
+	font-size: 0.55rem;
 	color: #fff;	
 	margin: 1.2rem auto 0;
 	font-weight: bold;
@@ -191,12 +191,30 @@
 	position: absolute;
 	left: 0;
 	top: 0;
-	background: url(../img/cg-shape5.png) no-repeat;
-	background-size: 100% 100%;	
 	width: 1.125rem;
 	height: 1.4rem;
 	line-height: 1.4rem;
 	padding-left: 4.65rem;
+}
+.part2 ul .text2 em.senior{
+	background: url(../img/senir.png) no-repeat;
+	background-size: 100% 100%;	
+	
+}
+.part2 ul .text2 em.auto{
+	background: url(../img/auto.png) no-repeat;
+	background-size: 100% 100%;	
+	width: 2.05rem;
+}
+.part2 ul .text2 em.test{
+	background: url(../img/test.png) no-repeat;
+	background-size: 100% 100%;	
+	
+}
+.part2 ul .text2 em.manual{
+	background: url(../img/manual.png) no-repeat;
+	background-size: 100% 100%;	
+	
 }
 .part2 ul li.li-2 .pos{
 	background: url(../img/cg-shape6.png) no-repeat;
@@ -216,6 +234,7 @@
 .part2 ul .text3{
 	font-size: 0.325rem;	
 	padding-top: 0.325rem;
+	color: #FFC600;
 }
 .part2 ul .padlef{
 	padding-left: 0.575rem;
