@@ -9,9 +9,12 @@ function getPos(obj){
     return {left:l,top:t};
 }            
 window.onload = function () {
-var oItem = document.getElementById('top');
-var oItem2 = document.getElementById('top2');
-var top = getPos(oItem).top;
+	var oItem = document.getElementById('top');
+	var oItem2 = document.getElementById('top2');
+	
+	var oFriendSon = document.getElementById('friend-son');
+	var l = 0;
+	var top = getPos(oItem).top;
 	window.onscroll=function(){
 	    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
 	    if(scrollTop>= top){
@@ -25,4 +28,15 @@ var top = getPos(oItem).top;
 	        oItem2.style.display='none';
 	    }
 	};
+	//合作商信息滚动
+	oFriendSon.innerHTML += oFriendSon.innerHTML;
+	oFriendSon.style.width = oFriendSon.offsetWidth*2+'rem';
+	var W = oFriendSon.offsetWidth/2;
+	setInterval(function(){
+		l -= 0.09;
+		oFriendSon.style.left = (l%W-W)%W+'rem';
+		if(l<-31.95){
+			l = 0;
+		}
+	},30)
 }

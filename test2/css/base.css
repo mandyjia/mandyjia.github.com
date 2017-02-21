@@ -50,7 +50,7 @@ body{font-family: "微软雅黑";}
 	display: block;
 }
 .top .head_t .tel{
-	margin-left: 3rem;
+	margin-left: 2.4rem;
 	margin-top: 0.55rem;
 }
 .top .head_t .tel em{
@@ -58,7 +58,7 @@ body{font-family: "微软雅黑";}
 }
 .top .head_t .tel a{
 	color: #fff;
-	font-size: 0.35rem;
+	font-size: 0.43rem;
 	display: block;
 }
 .top ul{
@@ -95,14 +95,45 @@ footer p{
 	font-family: "微软雅黑";
 	line-height: 0.425rem;
 }
-.part5{font-size: 0.35rem;}
-.part5_con{position: relative;overflow: hidden;width: 13.55rem;
-text-align:center; margin: 0.625rem auto 0;}
-.part5_con p{width: 95%; overflow: hidden;padding-left: 2%;word-wrap:break-word;}
-.sz_con{margin-top: 1%;padding-left: 5%;}
-.sz_word1{color: #fff; position: relative;}
-.sz_word2{position: relative; color: white;background:#41a3a4;margin-top: 0.25rem;margin-bottom: 5%;padding: 1% 0% ;}
-.sz_word3{text-align:left;line-height: 1.5em; color: #fff;}
+.part5{
+	font-size: 0.35rem;
+}
+.part5_con{
+	position: relative;
+	overflow: hidden;
+	width: 13.55rem;
+	text-align:center; 
+	margin: 0.625rem auto 0;
+}
+.part5_con p{
+	width: 95%; 
+	overflow: hidden;
+	padding-left: 2%;
+	word-wrap:break-word;
+}
+.sz_con{
+	margin-top: 1%;
+	padding-left: 5%;
+}
+.sz_word1{
+	color: #fff; 
+	position: relative;
+	font-size: 0.5rem;
+	font-weight: bold;
+}
+.sz_word2{
+	position: relative; 
+	color: white;
+	background:#41a3a4;
+	margin-top: 0.25rem;
+	margin-bottom: 5%;
+	padding: 1% 0% ;
+}
+.sz_word3{
+	text-align:left;
+	line-height: 1.5em; 
+	color: #fff;
+}
 .show3 strong{
 	width: 100%;
 	height: 7.1rem;
