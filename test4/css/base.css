@@ -63,11 +63,11 @@ body{font-family: "微软雅黑";}
 }
 .top ul{
 	background: #ddd;
-	font-family: "微软雅黑";
-	font-size: 0.475rem;
+	font-size: 0.5rem;
 	height: 1.25rem;
 	width: 100%;
 	margin: 0 auto;
+	font-weight: bold;
 }
 .top ul li{
 	margin-top: 0.4rem;

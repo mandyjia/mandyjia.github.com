@@ -12,8 +12,44 @@
 		<script src="js/jquery.js"></script>
 		<script src="js/common.js"></script>
 		<script src="js/top.js"></script>
+		<script>
+			window.onload = function(){
+				var oItem = document.getElementById('top');
+				var oItem2 = document.getElementById('top2');
+				var top = getPos(oItem).top;
+				
+				var oSroll = document.getElementById('box-ul');
+				var t = 0;
+				
+				window.onscroll=function(){
+				    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+				    if(scrollTop>= top){
+				        //吸住
+				        oItem.style.position='fixed';
+				        oItem.style.top='0';
+				        oItem2.style.display='block';
+				    }else{
+				        //回去
+				        oItem.style.position='static';
+				        oItem2.style.display='none';
+				    }
+				};	
+				//学员信息滚动
+				oSroll.innerHTML += oSroll.innerHTML;
+				oSroll.style.height = oSroll.offsetHeight*9+'rem';
+				var h = oSroll.offsetHeight/2;
+				setInterval(function(){
+					t -= 0.025;
+					oSroll.style.top = (t%h-h)%h+'rem';
+					if(t<-8){
+						t = 0;
+					}
+				},30)
+			};			
+		</script>
 	</head>
 	<body>
+		
 		<div class="t-Box">
 			<!--整体头部-->
 			<div class="top" id="top">
@@ -42,7 +78,7 @@
 						<a href="salary.html" target="_blank">就业</a>
 					</li>
 					<li class="fl">
-						<a href="aboutUs.html" target="_blank">达内介绍</a>
+						<a href="aboutUs.html" target="_blank">了解达内</a>
 					</li>
 				</ul>
 			</div>
@@ -125,71 +161,19 @@
 				<span></span>
 				<i></i>
 				<strong></strong>
-				<div class="scroll" id="xst"> 
-					<table class="xbgdxx" >                                    	                    <tbody>                
-							<tr>                    
-								<td >
-									<a href="">软件测试学员杨*明入职精硕科技月薪12000元</a>
-								</td>                
-							</tr>                
-						</tbody>          	                      
-						<tbody>                
-							<tr>                    								
-								<td >				
-			                		<a href="">软件测试学员周*军入职精硕科技月薪12000元</a>
-			     				</td>
-							</tr>                
-						</tbody>          	                      
-						<tbody>                
-							<tr>                    
-								<td >
-									<a href="">软件测试学员高* 入职中国网库月薪10000元</a>
-								</td>                
-							</tr>                
-						</tbody>                      
-			        	<tbody>                
-			        		<tr>                    
-			        			<td >
-			        				<a href="">软件测试学员龙*入职上海永利宝金融月薪12000元</a>
-			        			</td>                
-			        		</tr>                
-			        	</tbody>          	                      
-			        	<tbody>
-			            	<tr>                    
-			            		<td >
-									<a href="">软件测试学员高*入职中国网库月薪10000元</a>
-			            		</td>                
-			           		</tr>                
-			        	</tbody>          	                      
-			        	<tbody>                
-			        		<tr>                    
-			        			<td >
-			        				<a href="">软件测试学员李*雷入职环世众联月薪9000元</a>
-			        			</td>                
-			        		</tr>                
-			        	</tbody>          	                      
-			        	<tbody>                
-			        		<tr>                    
-			        			<td >
-			        				<a href="">软件测试学员蒙*入职华为月薪9000元</a>
-			        			</td>
-			               </tr>
-			        	</tbody>          	                      
-			        	<tbody>                
-			        		<tr>                    
-			        			<td >
-			        				<a href="">软件测试学员刘*丽入职金易融月薪9000元</a>
-				        		</td>                
-				        	</tr>                
-				        </tbody>          	                      
-				        <tbody>
-				            <tr>                    
-				            	<td >
-				            		<a href="">软件测试学员李*入职搜房网月薪8500元</a>
-				            	</td>                
-				            </tr>                
-				        </tbody>                                                                                    					</table>    
-			    </div>
+				<div class="roll_box" id="roll_box">
+					<ul class="box-ul" id="box-ul">
+						<li>软件测试学员杨*明入职精硕科技月薪12000元</li>
+						<li>软件测试学员周*军入职精硕科技月薪12000元</li>
+						<li>软件测试学员高* 入职中国网库月薪10000元</li>
+						<li>软件测试学员龙*入职上海永利宝金融月薪12000元</li>
+						<li>软件测试学员高*入职中国网库月薪10000元</li>
+						<li>软件测试学员李*雷入职环世众联月薪9000元</li>
+						<li>软件测试学员蒙*入职华为月薪9000元</li>
+						<li>软件测试学员刘*丽入职金易融月薪9000元</li>
+						<li>软件测试学员李*入职搜房网月薪8500元</li>
+					</ul>
+				</div>				
 			</div>
 			<!--第三部分-->
 			<div class="part3">
@@ -237,5 +221,13 @@
 				<p>2001-2017 达内国际公司(TARENA INTERNATIONAL,INC)版权所有 京ICP证08000853号-56</p>
 			</footer>
 		</div>
+		<script>
+			(function() {
+			  var _53code = document.createElement("script");
+			  _53code.src = "//tb.53kf.com/code/code/10092604/6?u_stat_id="+window.join_key;
+			  var s = document.getElementsByTagName("script")[0]; 
+			  s.parentNode.insertBefore(_53code, s);
+			})();
+		</script>
 	</body>
 </html>

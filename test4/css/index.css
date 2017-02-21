@@ -8,7 +8,6 @@
 	width: 100%;
 	height: 10rem;
 }
-
 .show1{
 	width: 100%;
 	height: 12.575rem;
@@ -51,7 +50,6 @@
 	color: #ffc600;
 	font-size: 0.35rem;
 }
-
 .show2 .pic{
 	margin-top: 0.35rem;
 }
@@ -97,8 +95,6 @@
 	background-size:100% 100%;
 	left:1.5rem ;
 }
-
-
 .show4{
 	width: 100%;
 	height: 14rem;
@@ -382,18 +378,19 @@
 }
 .show7 .text1{
 	position: absolute;
-	left: 1.75rem;
+	left: 1.55rem;
 	top: 1.375rem;
 	color: #24b9ac;
 	font-weight: bold;
-	font-size: 0.6rem;
+	font-size: 0.51rem;
 }
 .show7 .text1 strong{
 	color: #ffc600;
+	font-weight: bold;
 }
 .show7 .text2{
 	position: absolute;
-	left: 1.75rem;
+	left: 1.55rem;
 	top: 2.5rem;
 	color: #24b9ac;
 	font-size: 0.3rem;
@@ -432,7 +429,6 @@
 	position: relative;
 	height: 16.8rem;
 }
-
 .show3 span{
 	width: 14.25rem;
 	height: 2.55rem;
@@ -453,15 +449,6 @@
 .show3 em{
 	color: #ffc600;
 }
-/*.show3 b{
-	background: url(../img/arrow.png) no-repeat;
-	background-size: 100% 100%;
-	position: absolute;
-	left: 0;
-	top: 0rem;
-	width: 3.9rem;
-	height: 0.15rem;
-}*/
 .show3 .text2{
 	position: absolute;
 	left: 1.75rem;
@@ -472,4 +459,8 @@
 
 .part5_martop{
 	margin-top: 3.5rem;
+}
+.part5_martop img{
+	width: 4rem; 
+	height:6.5rem;
 }
