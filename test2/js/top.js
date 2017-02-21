@@ -33,7 +33,7 @@ window.onload = function () {
 	oFriendSon.style.width = oFriendSon.offsetWidth*2+'rem';
 	var W = oFriendSon.offsetWidth/2;
 	setInterval(function(){
-		l -= 0.09;
+		l -= 0.05;
 		oFriendSon.style.left = (l%W-W)%W+'rem';
 		if(l<-31.95){
 			l = 0;
