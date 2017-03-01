@@ -1,0 +1,122 @@
+
+*{padding:0; margin:0;}
+h1,h2,h3,h4,h5,h6{font-size:12px; font-weight:normal;}
+li{list-style:none;}
+a{color:#000; text-decoration:none;}
+b,strong{font-weight:normal;}
+i,em{font-style:normal;}
+
+img{vertical-align:top;}
+.clearfix:after{display:block; content:''; clear:both;}
+.clearfix{zoom:1;}
+.fl{float:left;}
+.fr{float:right;}
+input{ outline:none;}
+body{
+	font-family: 'Microsoft YaHei';
+}
+.wrap{ width: 100%; overflow: hidden;}
+
+
+@charset "utf-8";
+.imageflow{overflow:hidden; position:relative; text-align:left; visibility:hidden; width:100%}
+.imageflow img{border:none; position:absolute; top:0px; visibility:hidden; -ms-interpolation-mode:bicubic; border:3px #fff solid;
+	-webkit-box-shadow: 10px 10px 14px #737373;<!--（专对火狐浏览器的支持而设置的）-->
+   -moz-box-shadow: 10px 10px 14px #737373;<!--（对Safari和Chrome浏览器而设置的）-->
+   box-shadow: 10px 10px 14px #737373;
+
+}
+.imageflow p{margin:0 auto; text-align:center}
+.imageflow .loading{border:1px solid #ccc; height:15px; left:50%; margin-left:-106px; padding:5px; position:relative; visibility:visible; width:200px}
+.imageflow .loading_bar{background:#ccc; height:15px; visibility:visible; width:1%}
+.imageflow .caption{font-weight:bold; position:relative; text-align:center; z-index:10000}
+.imageflow .scrollbar{border-bottom:1px solid #b3b3b3; position:relative; visibility:hidden; z-index:10001; height:1px}
+.imageflow .slider{height:14px; margin:-6px 0 0 -7px; position:absolute; width:14px; z-index:10002}
+.imageflow .images{overflow:hidden; white-space:nowrap; }
+
+
+
+
+
+@media screen and (max-width:1400px){
+	.part1 em{
+		width: 25%;
+	}
+	.part1 em.fir{
+		width: 24%;
+	}
+	.part8 em.fir{
+		width: 21%;
+	}
+}
+@media screen and (max-width:1230px){
+	.part1 em{
+		width: 22%;
+	}
+	.part1 em.fir{
+		width: 21%;
+	}
+	.part8 em.fir{
+		width: 18%;
+	}
+	
+}
+@media screen and (max-width:1109px){
+	.part1 em{
+		width: 19%;
+	}
+	.part1 em.fir{
+		width: 18%;
+	}
+	.part8 em.fir{
+		width: 9%;
+	}
+	
+}
+@media screen and (max-width:1003px){
+	.part1 em{
+		width: 16%;
+	}
+	.part1 em.fir{
+		width: 15%;
+	}
+	
+}
+@media screen and (max-width:919px){
+	.part1 em{
+		width: 13%;
+	}
+	.part1 em.fir{
+		width: 12%;
+	}
+	
+}
+@media screen and (max-width:848px){
+	.part1 em{
+		width: 10%;
+	}
+	.part1 em.fir{
+		width: 9%;
+	}
+	
+}
+@media screen and (max-width:787px){
+	.part1 em{
+		width: 0%;
+	}
+	.part1 em.fir{
+		width: 0%;
+	}
+}
+
+@media screen and (min-width:1400px){
+	.part1 em{
+		width: 25%;
+	}
+	.part1 em.fir,{
+		width: 25%;
+	}
+	.part8 em.fir{
+		width: 25%;
+	}
+}

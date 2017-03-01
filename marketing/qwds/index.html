@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery.js"></script>
+    <!--swiper2.0-->
+    <link rel="stylesheet" href="css/idangerous.swiper.css">
+    <script src="js/idangerous.swiper.js"></script>
+    <!--3d-->
+    <script src="js/jquery.hover3d.js"></script>
+    <!--动效-->
+    <link href="css/animate.css" type="text/css"  rel="stylesheet" />
+    <script src="js/wow.min.js" type="text/javascript"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+<body>
+<!--[if lte IE 9]>
+<p class="browserupgrade">您的浏览器版本太低，请到 <a href="http://browsehappy.com" target="_blank">这里</a> 更新，已获取最佳体验。谢谢！<a class="close">关闭</a></p>
+<script>
+    $('.close').click(function(){
+        $('.browserupgrade').css('display','none');
+    });
+</script>
+<![endif]-->
+<div class="wrap">
+    <div class="header">
+        <!--头部预留-->
+    </div>
+    <div class="content">
+        <div class="banner">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="banner-img img1"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="banner-img img2"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="banner-img img3"></div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="pagination"></div>
+            </div>
+            <script type="text/javascript">
+                var mySwiper = new Swiper('.swiper-container',{
+                    pagination : '.pagination',
+                    paginationClickable: true,
+                    loop:true,
+                    autoplay: 3000,
+                    speed:1000,
+                });
+            </script>
+        </div>
+        <div class="part bg1">
+            <div class="main">
+                <div class="container1 clearfix">
+                    <div class="text wow fadeInLeft" data-wow-delay="0.2s"></div>
+                    <!--[if lte IE 9]>
+                    <img class="series-img" src="img/ss-ie.png" />
+                    <![endif]-->
+                    <div class="series wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="ss__card">
+                            <div class="">
+                                <div class="ss-1"></div>
+                                <div class="ss-2"></div>
+                                <div class="ss-3"></div>
+                                <div class="ss-4"></div>
+                                <div class="ss-5"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        //series
+                        $(".series").hover3d({
+                            selector: ".ss__card",
+                        });
+                    </script>
+                </div>
+                <a class="btn" href="#" target="_blank">有类似问题？</a>
+            </div>
+        </div>
+        <div class="part bg2">
+            <div class="main">
+                <div class="title wow fadeInDown" data-wow-delay="0.2s">
+                    <h1>刷单、铺货、开车，老玩法难解新问题</h1>
+                </div>
+                <div class="container2">
+                    <div class="tag wow bounceIn" data-wow-delay="0.2s">
+                        <img src="img/ctn2-tag1.png" />
+                        <h1>电商红利消失，<br/>
+                            竞争加剧</h1>
+                    </div>
+                    <div class="box b1 clearfix wow bounceInLeft" data-wow-delay="0.2s">
+                        <img src="img/ctn2-box-b1.png" />
+                        <div class="info">
+                            <h1>电商红利消失，竞争加剧</h1>
+                            <p>电商红利已经消失，大家都在玩电商，竞争加剧，导致高流量成本，低转化率，平台沦为品牌中心，大多人只能赔本赚吆喝。</p>
+                        </div>
+                    </div>
+                    <div class="box b2 clearfix wow bounceInLeft" data-wow-delay="0.4s">
+                        <img src="img/ctn2-box-b2.png" />
+                        <div class="info">
+                            <h1>商品产品化、产品互联网化</h1>
+                            <p>互联网思维的产品大行其道，一些靠刷单、推广技巧生存的企业被淘汰几率大大提升。如何用互联网思维打造好产品，成为店铺生存的大问题。</p>
+                        </div>
+                    </div>
+                    <div class="box b3 clearfix wow bounceInRight" data-wow-delay="0.2s">
+                        <img src="img/ctn2-box-b3.png" />
+                        <div class="info">
+                            <h1>电商社群化、无线化</h1>
+                            <p>移动互联网兴起，用户习惯转向无线端，用户时间碎片化、社交化，对传统电商来说，基于搜索的流量时代开始破灭，营销开始转向口碑化、社群化。</p>
+                        </div>
+                    </div>
+                    <div class="box b4 clearfix wow bounceInRight" data-wow-delay="0.4s">
+                        <img src="img/ctn2-box-b4.png" />
+                        <div class="info">
+                            <h1>营销全网化、场景化</h1>
+                            <p>微信、微博、微店、京东、直播、快手、美丽说...，用户的购物途径不再是单一的淘宝，全网的营销、更场景化的营销成为新时代的制胜法宝。</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="btn" href="#" target="_blank">有类似问题？</a>
+                <script>
+                    $('.box.b1').mouseenter(function(){
+                        $('.tag img').attr('src','img/ctn2-tag1.png');
+                        $('.tag h1').html("电商红利消失，<br/>竞争加剧");
+                    });
+                    $('.box.b2').mouseenter(function(){
+                        $('.tag img').attr('src','img/ctn2-tag2.png');
+                        $('.tag h1').html("商品产品化、<br/>产品互联网化");
+                    });
+                    $('.box.b3').mouseenter(function(){
+                        $('.tag img').attr('src','img/ctn2-tag3.png');
+                        $('.tag h1').html("电商社群化、<br/>无线化");
+                    });
+                    $('.box.b4').mouseenter(function(){
+                        $('.tag img').attr('src','img/ctn2-tag4.png');
+                        $('.tag h1').html("营销全网化、<br/>场景化");
+                    });
+                </script>
+            </div>
+        </div>
+        <div class="part bg3">
+            <div class="main">
+                <div class="title c2 wow fadeInDown" data-wow-delay="0.2s">
+                    <h1>达内“全网电商”新玩法<br/>
+                        针对解决中小卖家店铺问题</h1>
+                </div>
+                <div class="container3 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="round">
+                        <div class="tag"></div>
+                        <p class="p1">电商宝贝精修</p>
+                        <p class="p2">淘宝店铺装修</p>
+                        <p class="p3">天猫店铺运营</p>
+                        <p class="p4">阿里速卖通玩法</p>
+                        <p class="p5">移动店铺营销设计</p>
+                        <p class="p6">微店运营推广</p>
+                        <p class="p7">多方平台引流方法</p>
+                        <p class="p8">如何做淘宝店铺</p>
+                        <p class="p9">淘宝店铺运营</p>
+                        <p class="p10">京东店铺运营</p>
+                        <p class="p11">阿里巴巴店铺运营</p>
+                        <p class="p12">手机淘宝运营</p>
+                        <p class="p13">朋友圈微商玩法</p>
+                        <p class="p14">网红经济—主播</p>
+                    </div>
+                    <h1>达内“全网电商”课程概要</h1>
+                </div>
+                <a class="btn" href="#" target="_blank">了解课程详细内容</a>
+            </div>
+        </div>
+        <div class="part c1">
+            <div class="main">
+                <div class="title c2 wow fadeInDown" data-wow-delay="0.2s">
+                    <h1>针对性实战演练<br/>
+                        解决店铺问题，看到店铺提升</h1>
+                </div>
+                <div class="container4 clearfix">
+                    <div class="box wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="black"></div>
+                        <img src="img/ctn4-img1.jpg" />
+                        <div class="info">
+                            <h1>标题优化后，关键词排名上升至首页</h1>
+                        </div>
+                    </div>
+                    <div class="box wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="black"></div>
+                        <img src="img/ctn4-img2.jpg" />
+                        <div class="info">
+                            <h1>学员学习后，销售额上涨50%，月支付金额近55万</h1>
+                        </div>
+                    </div>
+                    <div class="box wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="black"></div>
+                        <img src="img/ctn4-img3.jpg" />
+                        <div class="info">
+                            <h2>学习两周后，学员店铺浏览量较上周同期<br/>
+                                上涨9.11%，支付转化率上涨82.77%</h2>
+                        </div>
+                    </div>
+                    <div class="box wow fadeInLeft" data-wow-delay="0.4s">
+                        <div class="black"></div>
+                        <img src="img/ctn4-img4.jpg" />
+                        <div class="info">
+                            <h1>学员店铺：西门子立尊家居店</h1>
+                        </div>
+                    </div>
+                    <div class="box wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="black"></div>
+                        <img src="img/ctn4-img5.jpg" />
+                        <div class="info">
+                            <h1>学员店铺：圣乐天歌乐器专营店</h1>
+                        </div>
+                    </div>
+                    <div class="box wow fadeInRight" data-wow-delay="0.4s">
+                        <div class="black"></div>
+                        <img src="img/ctn4-img6.jpg" />
+                        <div class="info">
+                            <h1>学员店铺：缘木良品旗舰店</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="part bg4">
+            <div class="main">
+                <div class="title wow fadeInDown" data-wow-delay="0.2s">
+                    <h1>我的成功你可以复制</h1>
+                </div>
+                <div class="container5 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="swiper-container2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="box">
+                                    <p><span class="l"></span><span class="r"></span>我是扈筱，90后，退伍军人。我在达内网络营销学院学习之后，以月薪38K的薪资入职亿博网络，任职中山分公司CEO，负责本地商城运营。感谢达内能给我的全局的网络营销观念，帮助我打造了自己的全面营销能力。电商的运作不只淘宝、电商，而是全网的营销。</p>
+                                    <div class="info">
+                                        <img src="img/ctn5-img1.png" />
+                                        <h1>扈筱</h1>
+                                        <h2>201403班学员<br/>
+                                            毕业入职亿博网络，月薪38K</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="box">
+                                    <p><span class="l"></span><span class="r"></span>我是张延军，北京中条山园林工程有限公司的创始人。我一直是做传统企业的，但是随着互联网发展，线下店铺陆续撤店，线上发展是必然趋势，因此我加入达内，学习电商，并且邀请达内两位同班同学高耀和廉国勇加入了我的公司，共同做线上运营。达内是我事业的转折点！</p>
+                                    <div class="info">
+                                        <img src="img/ctn5-img2.png" />
+                                        <h1>张延军</h1>
+                                        <h2>201607班学员<br/>
+                                            创办北京中条山园林工程有限公司</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="box">
+                                    <p><span class="l"></span><span class="r"></span>我是高耀，2016年在达内学习。虽然是本科电子商务专业在读，但是我选择了达内来增强实力。在达内毕业后，我和廉国勇同学加入了我的同班同学、也是我的老板张延军（就是上面那位同学）创办的北京中条山园林工程有限公司，成为合伙人之一。达内给了我电商运营商的新思维和新方法，更让我有创业的机会和能力！</p>
+                                    <div class="info">
+                                        <img src="img/ctn5-img3.png" />
+                                        <h1>高耀</h1>
+                                        <h2>201607班学员<br/>
+                                            毕业加入北京中条山园林工程有限公司，月薪5K+股份</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="pagination2"></div>
+                    </div>
+                    <script type="text/javascript">
+                        var mySwiper2 = new Swiper('.swiper-container2',{
+                            pagination : '.pagination2',
+                            paginationClickable: true,
+                            loop:true,
+                            autoplay: 5000,
+                            speed:1500,
+                            mode: 'vertical'
+                        });
+                        $('.container5').mouseenter(function(){
+                            mySwiper2.stopAutoplay();
+                        });
+                        $('.container5').mouseleave(function(){
+                            mySwiper2.startAutoplay();
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div class="part c2">
+            <div class="main">
+                <div class="container6 wow fadeIn" data-wow-delay="0.2s">
+                    <p>5天训练营 <span>免费</span> 试听，听了管用您再报名<br/>
+                        每天仅限<span>前10名</span></p>
+                    <form action="" method="">
+                        <label>姓名：<input type="text" name="name" /></label>
+                        <label>电话：<input type="text" name="phone" /></label>
+                        <input type="submit" value="立即申请" />
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="part c0">
+            <div class="main">
+                <div class="title c2 wow fadeInDown" data-wow-delay="0.2s">
+                    <h1>权威电商实战讲师</h1>
+                </div>
+                <div class="container7 clearfix">
+                    <div class="box wow bounceIn" data-wow-delay="0.3s">
+                        <img src="img/ctn7-img1.jpg" />
+                        <div class="text">
+                            <h1>李新刚</h1>
+                            <h2>教学总监</h2>
+                        </div>
+                        <div class="info">
+                            <h1>李新刚</h1>
+                            <h2>教学总监</h2>
+                            <p>中国网络营销教育体系" 第一架构师"、网络营销课程体系" 首席研发专家"、网络营销产品" 研发师"、网络营销研发团队" 领导人物"。</p>
+                            <a href="#" target="_blank"></a>
+                        </div>
+                    </div>
+                    <div class="box wow bounceIn" data-wow-delay="0.4s">
+                        <img src="img/ctn7-img2.jpg" />
+                        <div class="text">
+                            <h1>刘京涛</h1>
+                            <h2>电商金牌讲师</h2>
+                        </div>
+                        <div class="info">
+                            <h1>刘京涛</h1>
+                            <h2>电商金牌讲师</h2>
+                            <p>5年电商运营实战经验，培训学员超过13000人！擅长淘宝、天猫、京东平台运营和推广，从事过：保健品，服装，土特产，化妆品，图书，记忆枕等多行业推广和运营。</p>
+                            <a href="#" target="_blank"></a>
+                        </div>
+                    </div>
+                    <div class="box wow bounceIn" data-wow-delay="0.5s">
+                        <img src="img/ctn7-img3.jpg" />
+                        <div class="text">
+                            <h1>莫明龙</h1>
+                            <h2>电商金牌讲师</h2>
+                        </div>
+                        <div class="info">
+                            <h1>莫明龙</h1>
+                            <h2>电商金牌讲师</h2>
+                            <p>六年以上电商运营实战经验，对淘宝运营、数据分析有着丰富的经验。服务的传统企业转型电商后月营业额超百万，年营业额超千万。</p>
+                            <a href="#" target="_blank"></a>
+                        </div>
+                    </div>
+                    <div class="box wow bounceIn" data-wow-delay="0.6s">
+                        <img src="img/ctn7-img4.jpg" />
+                        <div class="text">
+                            <h1>郝建娥</h1>
+                            <h2>电商金牌讲师</h2>
+                        </div>
+                        <div class="info">
+                            <h1>郝建娥</h1>
+                            <h2>电商金牌讲师</h2>
+                            <p>从事设计行业多年，担任达内高级美工设计讲师。重点教授课程：专题页设计制作、Photoshop高级实战课程、淘宝美工设计制作等。</p>
+                            <a href="#" target="_blank"></a>
+                        </div>
+                    </div>
+                    <div class="box wow bounceIn" data-wow-delay="0.7s">
+                        <img src="img/ctn7-img5.jpg" />
+                        <div class="text">
+                            <h1>刘洪岩</h1>
+                            <h2>电商金牌讲师</h2>
+                        </div>
+                        <div class="info">
+                            <h1>刘洪岩</h1>
+                            <h2>电商金牌讲师</h2>
+                            <p>毕业于俄罗斯阿莫尔共青城国立大学，专注于研究百度与淘宝的算法。曾为北京语言大学、中脉科技、知乎金融等做过代运营服务。</p>
+                            <a href="#" target="_blank"></a>
+                        </div>
+                    </div>
+                    <div class="box wow bounceIn" data-wow-delay="0.8s">
+                        <img src="img/ctn7-img6.jpg" />
+                        <div class="text">
+                            <h1>陈丰洲</h1>
+                            <h2>电商金牌讲师</h2>
+                        </div>
+                        <div class="info">
+                            <h1>陈丰洲</h1>
+                            <h2>电商金牌讲师</h2>
+                            <p>7 年教育培训，5 年搜索营销，2 年授课经验，实操经验丰富，经手账户数百，涉及教育、医疗、电商、机械制造、招商加盟等。</p>
+                            <a href="#" target="_blank"></a>
+                        </div>
+                    </div>
+                    <div class="box wow bounceIn" data-wow-delay="0.9s">
+                        <img src="img/ctn7-img7.jpg" />
+                        <div class="text">
+                            <h1>郑焕娟</h1>
+                            <h2>电商金牌讲师</h2>
+                        </div>
+                        <div class="info">
+                            <h1>郑焕娟</h1>
+                            <h2>电商金牌讲师</h2>
+                            <p>曾负责高朋、搜狐汽车等知名企业百度、谷歌、搜狗账户推广及关键词投放；丰富的社会化媒体运营、电商以及教育行业经验。</p>
+                            <a href="#" target="_blank"></a>
+                        </div>
+                    </div>
+                    <div class="box wow bounceIn" data-wow-delay="1s">
+                        <img src="img/ctn7-img8.jpg" />
+                        <div class="text">
+                            <h1>殷源</h1>
+                            <h2>电商金牌讲师</h2>
+                        </div>
+                        <div class="info">
+                            <h1>殷源</h1>
+                            <h2>电商金牌讲师</h2>
+                            <p>6年市场运营推广经验，曾服务于长安汽车、腾讯投资互联网公司等，负责产品市场推广、品牌传播、新媒体运营等方案制定及执行落地。</p>
+                            <a href="#" target="_blank"></a>
+                        </div>
+                    </div>
+                </div>
+                <a class="btn" href="#" target="_blank">预约名师</a>
+            </div>
+        </div>
+        <div class="part bg5">
+            <div class="main">
+                <div class="title c2 wow fadeInDown" data-wow-delay="0.2s">
+                    <h1>美国上市培训机构  高品质  有实力</h1>
+                </div>
+                <div class="container8">
+                    <div class="box">
+                        <div class="text t1">
+                            <h1>上市</h1>
+                            <p>2015年4月3日，达内在美国纳斯达克上市，是中国第一个赴美上市的职业教育公司</p>
+                        </div>
+                        <div class="text t2">
+                            <h1>15年</h1>
+                            <p>15年运营，在42城市建立145家培训中心；40万学员高薪毕业，30%来自于学员推荐</p>
+                        </div>
+                        <div class="text t3">
+                            <h1>15年</h1>
+                            <p>O2O互联网+面授课，让北京名师为全国学员上课；全球领先线上交互平台TMOOC，确保学习质量教学质量统一</p>
+                        </div>
+                        <div class="text t3">
+                            <h1>15年</h1>
+                            <p>O2O互联网+面授课，让北京名师为全国学员上课；全球领先线上交互平台TMOOC，确保学习质量教学质量统一</p>
+                        </div>
+                        <div class="text tx2 t4">
+                            <h1>BAT战略合作</h1>
+                            <p>达内网络营销课程是国内唯一与百度、阿里巴巴和腾讯三大互联网巨头战略合作的课程</p>
+                        </div>
+                        <div class="text tx2 t5">
+                            <h1>1000名</h1>
+                            <p>达内拥有业内完善的教研团队，200 名知名讲师、1000 名教研人员</p>
+                        </div>
+                        <div class="text tx2 t6">
+                            <h1>大咖交流</h1>
+                            <p>每周邀请业界大咖、课程总监、就业明星分享经验，拓宽学员视野，提升行业经验</p>
+                        </div>
+                    </div>
+                    <script>
+                        var jWindow = $(window);
+                        jWindow.scroll(function(){
+                            var scrollHeight = jWindow.scrollTop();
+                            var screenHeight = jWindow.height();
+                            //ctn8
+                            var ctn8Height = $(".container8").offset().top;
+                            if((scrollHeight + screenHeight *0.9) >= ctn8Height){
+                                $(".container8 .box").slideDown("slow");
+                            }
+                            if(scrollHeight + screenHeight * 0.9 <  ctn8Height ){
+                                $(".container8 .box").slideUp("slow");
+                            }
+                        });
+                    </script>
+                    <a class="btn" href="#" target="_blank">达内更多实力</a>
+                </div>
+            </div>
+        </div>
+        <div class="part bg6">
+            <div class="main">
+                <div class="container9 wow fadeInUp" data-wow-delay="0.2s">
+                    <h1>每年10万人选择达内教育</h1>
+                    <h2>选择的人多，自然是好培训</h2>
+                </div>
+                <a class="btn c1" href="#" target="_blank">我要报名</a>
+            </div>
+        </div>
+        <div class="part c3">
+            <div class="main">
+                <div class="container10 clearfix">
+                    <div class="box wow fadeInLeft" data-wow-delay="0.4s">
+                        <div class="tag t1"></div>
+                        <h1>0基础能学会吗？</h1>
+                    </div>
+                    <div class="box wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="tag t2"></div>
+                        <h1>学不会怎么办？</h1>
+                    </div>
+                    <div class="box wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="tag t3"></div>
+                        <h1>学完能做什么？</h1>
+                    </div>
+                    <div class="box wow fadeInRight" data-wow-delay="0.4s">
+                        <div class="tag t4"></div>
+                        <h1>学完能赚多少钱？</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer part">
+        <div class="main">
+            <p>2001-2016 达内时代科技集团有限公司(TARENA INTERNATIONAL,INC.) 版权所有 京ICP证8000853号-56</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
